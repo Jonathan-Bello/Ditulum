@@ -1,0 +1,122 @@
+// Colors
+$primaryColors: (
+  100: #f8ece4,
+  200: #f1dac9,
+  300: #e9c7ae,
+  400: #e2b593,
+  // Naranja
+  500: #dba278,
+  // Marrón claro
+  600: #a58263,
+  700: #836148,
+  800: #584130,
+  900: #2c2018,
+);
+
+// Verde
+$secondaryColors: (
+  100: #e9eae4,
+  200: #d4d5c8,
+  300: #bec0ad,
+  // Verde claro
+  400: #a4b384,
+  // Verde oscuro
+  500: #939676,
+  600: #76785e,
+  700: #585a47,
+  800: #3b3c2f,
+  900: #1d1e18,
+);
+
+$greyColors: (
+  //main bg
+  50: #f4f4f5,
+  100: #f4f2f4,
+  200: #d1d4d4,
+  300: #babfbf,
+  400: #abaaaa,
+  500: #747e7e,
+  600: #5d6969,
+  700: #465353,
+  800: #2f3e3e,
+  900: #182828
+);
+
+$header-height: 7rem;
+$section-spacing: 4rem;
+$block-pacing: 1rem;
+$title-line-height: 1.3;
+$body-line-height: 1.6;
+
+// Fonts
+$font-title: "Montserrat", sans-serif;
+$font-body: "Montserrat", sans-serif;
+
+// z-index values
+$z-back: -10;
+$z-normal: 1;
+$z-front: 10;
+$z-tooltip: 20;
+$z-overlay: 30;
+$z-modal: 40;
+$z-fixed: 50;
+$z-off-canvas: 100;
+
+// Breakpoints
+// $breakpoint-xs: 0;
+// $breakpoint-sm: 576px;
+// $breakpoint-md: 768px;
+// $breakpoint-lg: 992px;
+// $breakpoint-xl: 1200px;
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-md: 40em; // 640px
+$breakpoint-lg: 64em; // 1024px
+$breakpoint-xl: 90em; // 1440px
+
+// Font sizes
+$font-size-h1: 1.75rem;
+$font-size-h2: 1.5rem;
+$font-size-h3: 1.25rem;
+$font-size-h4: 1rem;
+$font-size-big: 1rem;
+$font-size-normal: 0.875rem;
+$font-size-small: 0.75rem;
+$font-size-smaller: 0.6875rem;
+
+// Others
+/* Size max in desktop */
+$max-width: 1200px;
+$border-radius: 0.25rem;
+$box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+
+// Colors comodines
+$color-primary: map-get($primaryColors, 500);
+$color-primary-dark: map-get($primaryColors, 600);
+$color-secondary: map-get($secondaryColors, 400);
+$color-secondary-dark: map-get($secondaryColors, 500);
+
+// Colors grises
+$color-bg-main: map-get($greyColors, 50);
+$color-title: map-get($greyColors, 900);
+$color-text: map-get($greyColors, 900);
+
+// Paleta de colores
+$color-gris: map-get($greyColors, 400);
+$color-beige: #f4f2f4;
+$color-rosa: #CD9797;
+
+// Variables sizes in desktopy
+$header-height-lg: 8.75rem;
+$section-spacing-lg: 2rem;
+$block-spacing-lg: 2rem;
+
+$font-size-h1-lg: 3rem;
+$font-size-h2-lg: 2rem;
+$font-size-h3-lg: 1.5rem;
+$font-size-h4-lg: 1.25rem;
+$font-size-big-lg: 1.25rem;
+$font-size-normal-lg: 1rem;
+$font-size-small-lg: 0.875rem;
+$font-size-smaller-lg: 0.75rem;
