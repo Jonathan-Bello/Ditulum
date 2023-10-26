@@ -1,16 +1,16 @@
 @import "~ed-grid/ed-grid";
 
+// Base
+@import "./base/reset";
+@import "./base/fonts";
+
 // Utils
 @import "./utils/variables";
 @import "./utils/mixins";
 
-// Base
-@import "./base/reset";
-@import "./base/fonts";
-@import "./base/base";
-
 // Theme
 @import "./theme/theme";
+@import "./base/base";
 
 // Layout
 @import "./layout/layout";

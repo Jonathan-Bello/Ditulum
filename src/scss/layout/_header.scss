@@ -1,9 +1,33 @@
 .Header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
-  
+  &__logo {
+    flex: 0.3;
+    height: 4rem;
+  }
 
-  padding: 0.2rem 0.5rem;
+  &__menuIcon {
+    width: 1.75em;
+    height: 1.75em;
+
+    @include from(lg) {
+      display: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0.5;
+    gap: 1rem;
+    @include from(m) {
+      gap: 2rem;
+    }
+  }
+
+  padding: 0.5rem 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }

@@ -6,9 +6,9 @@ import { RiFacebookFill } from "@react-icons/all-files/ri/RiFacebookFill"
 const NavSocialMedia = () => {
   return (
     <div className="NavSocialMedia">
-      <AiOutlineShoppingCart />
-      <RiFacebookFill />
-      <AiOutlineInstagram />
+      <AiOutlineShoppingCart className="NavSocialMedia__icon" />
+      <RiFacebookFill className="NavSocialMedia__icon" />
+      <AiOutlineInstagram className="NavSocialMedia__icon" />
     </div>
   )
 }

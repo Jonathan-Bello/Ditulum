@@ -98,14 +98,14 @@ $color-secondary: map-get($secondaryColors, 400);
 $color-secondary-dark: map-get($secondaryColors, 500);
 
 // Colors grises
-$color-bg-main: map-get($greyColors, 50);
+$color-bg-main: #fff;
 $color-title: map-get($greyColors, 900);
 $color-text: map-get($greyColors, 900);
 
 // Paleta de colores
 $color-gris: map-get($greyColors, 400);
 $color-beige: #f4f2f4;
-$color-rosa: #CD9797;
+$color-rosa: #cd9797;
 
 // Variables sizes in desktopy
 $header-height-lg: 8.75rem;
