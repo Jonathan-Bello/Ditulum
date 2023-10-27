@@ -1,0 +1,54 @@
+// *HomeServiciosSection
+.HomeServiciosSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+
+  &__title {
+    color: #182828;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 600;
+
+    @include from(lg) {
+      font-size: 3em;
+    }
+  }
+
+  &__text {
+    color: #182828;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 300;
+  }
+
+  &__servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.CardServiHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include from(m) {
+    width: 30%;
+  }
+
+  &__img {
+  
+  }
+
+  &__title {
+    color: #182828;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+  }
+}
