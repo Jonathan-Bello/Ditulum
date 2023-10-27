@@ -1,0 +1,76 @@
+.Banner {
+  position: relative;
+  width: 100%;
+  height: 32rem;
+  overflow: hidden;
+  background-color: blue;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__container {
+    position: absolute;
+    bottom: 0;
+    left: -2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 5;
+    height: 8rem;
+    overflow: visible;
+    background-color: var(--color-primary-600);
+
+    mask-image: url("/svg/mancha.svg");
+    mask-size: cover;
+
+    @include from(500px) {
+      height: 10rem;
+    }
+
+    @include from(m) {
+      height: 12rem;
+      width: 70%;
+      mask-position: top;
+    }
+
+    @include from(lg) {
+      height: 12rem;
+      width: 50%;
+    }
+
+    &__text {
+      color: white;
+      padding-left: 4rem;
+      font-weight: 300;
+      max-width: 70%;
+      margin: 0;
+      font-size: 1rem;
+
+      @include from(500px) {
+        padding: 2rem 0 0 4rem;
+      }
+
+      @include from(m) {
+        font-size: 1.2rem;
+      }
+
+      @include from(lg) {
+        font-size: 1.5rem;
+        padding-left: 6rem;
+      }
+
+      @include from(xl) {
+        font-size: 1.5rem;
+        padding-left: 6rem;
+      }
+
+      & b {
+        font-weight: 600;
+      }
+    }
+  }
+}
