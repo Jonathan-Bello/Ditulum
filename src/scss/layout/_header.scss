@@ -5,10 +5,47 @@
   padding: 0.5rem 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 
+  @include from(lg) {
+    padding: 0.5rem 2rem;
+  }
+
+  &__linkList {
+    @include from(lg) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
   &__logo {
-    flex: 0.1;
+    flex: 0.2;
     height: 4rem;
     width: 5.75rem;
+
+    @include from(lg) {
+      height: auto;
+      width: 20%;
+    }
+  }
+
+  &__content {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    @include from(m) {
+      gap: 2rem;
+    }
+
+    @include from(lg) {
+      justify-content: space-around;
+
+      & b {
+        font-size: 1em;
+      }
+    }
   }
 
   &__menuIcon {
@@ -17,17 +54,6 @@
 
     @include from(lg) {
       display: none;
-    }
-  }
-
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 0.8;
-    gap: 1rem;
-    @include from(m) {
-      gap: 2rem;
     }
   }
 }

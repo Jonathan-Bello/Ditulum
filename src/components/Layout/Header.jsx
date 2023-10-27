@@ -1,9 +1,13 @@
 import * as React from "react"
-import useScreenSize from "../../hook/useScreenSize"
-import Logo from "../../assets/svg/MobileIcon.svg"
-import NavSocialMedia from "./NavSocialMedia"
+import { Link } from "gatsby"
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu"
+
 import NavMobile from "./NavMobile"
+import NavSocialMedia from "./NavSocialMedia"
+import useScreenSize from "../../hook/useScreenSize"
+
+import MobileLogo from "../../assets/svg/MobileLogo.svg"
+import DeskLogo from "../../assets/svg/DeskLogo.svg"
 
 const Header = ({ siteTitle }) => {
   const { width, height } = useScreenSize()
@@ -11,9 +15,31 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="Header">
-      <img className="Header__logo" src={Logo} alt="icon" />
+      {width > 1020 && (
+        <div className="lg-40">
+          <div className="Header__linkList">
+            <Link to="#">Home</Link>
+            <Link to="#">Servicios</Link>
+            <Link to="#">Nosotros</Link>
+            <Link to="#">Tienda</Link>
+          </div>
+        </div>
+      )}
 
-      <div className="Header__content">
+      <img
+        className="Header__logo lg-20"
+        src={width > 1020 ? DeskLogo : MobileLogo}
+        alt="icon"
+      />
+
+      {width > 1020 && (
+        <div className="Header__linkList lg-20">
+          <Link to="#">Blog</Link>
+          <Link to="#">Contacto</Link>
+        </div>
+      )}
+
+      <div className="Header__content lg-20">
         <NavSocialMedia />
         <b>ES | EN</b>
         <AiOutlineMenu
