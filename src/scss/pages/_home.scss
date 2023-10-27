@@ -1,5 +1,6 @@
 // *HomeServiciosSection
 .HomeServiciosSection {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +31,14 @@
     justify-content: center;
     gap: 1rem;
   }
+
+  &__hoja {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    z-index: -5;
+  }
 }
 
 .CardServiHome {
@@ -39,10 +48,6 @@
 
   @include from(m) {
     width: 30%;
-  }
-
-  &__img {
-  
   }
 
   &__title {
