@@ -1,0 +1,25 @@
+.HomeInstagramSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: var(--color-grey-900, #182828);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0 0 2rem;
+    & b {
+      font-weight: 500;
+    }
+  }
+
+  &__instaLink {
+    text-decoration: underline;
+    color: var(--color-grey-900, #182828);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
