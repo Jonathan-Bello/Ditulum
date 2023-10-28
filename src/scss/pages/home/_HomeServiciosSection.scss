@@ -50,6 +50,10 @@
     width: 30%;
   }
 
+  &__img {
+    margin-bottom: 0.5em;
+  }
+
   &__title {
     color: #182828;
     text-align: center;
@@ -57,3 +61,4 @@
     font-weight: 600;
   }
 }
+

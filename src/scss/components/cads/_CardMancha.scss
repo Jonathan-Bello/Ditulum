@@ -1,0 +1,29 @@
+.CardMancha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include from(lg) {
+    flex: 1;
+  }
+
+  &__img {
+    max-width: 200px;
+    margin-bottom: 0.5em;
+
+    @include from(lg) {
+      max-width: 280px;
+    }
+  }
+
+  &__title {
+    color: var(--Marrn-claro, #a58263);
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 500;
+
+    @include from(lg) {
+      max-width: 280px;
+    }
+  }
+}
