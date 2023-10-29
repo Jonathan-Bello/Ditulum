@@ -1,8 +1,15 @@
 import React from "react"
 
-const CardServiciosFlatList = ({ imgSrc, title, active }) => {
+const CardServiciosFlatList = ({
+  imgSrc,
+  title,
+  active,
+  index,
+  setSetselectedServiceIndex,
+}) => {
   return (
     <div
+      onClick={() => setSetselectedServiceIndex(index)}
       className={`CardServiciosFlatList ${
         active && "CardServiciosFlatList--active"
       }`}
