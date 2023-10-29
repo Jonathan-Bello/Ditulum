@@ -1,0 +1,82 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1rem;
+
+  background-color: #dfe5d4;
+  mask-image: url("/svg/FooterMaskMobile.svg");
+  mask-size:  cover;
+  mask-repeat: no-repeat;
+
+  @include from(m) {
+    padding: 6rem 2rem 2rem;
+  }
+
+  @include from(lg) {
+    mask-image: url("/svg/FooterMaskDesk.svg");
+    mask-size: 100%;
+    mask-position: top;
+    padding: 10rem 4rem 2rem;
+  }
+
+  &__BrandContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem;
+
+    @include from(m) {
+      margin: 0;
+      justify-content: center;
+    }
+
+    &__logo {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 1rem;
+
+      @include from(lg) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__socialmedia {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      &--icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__contactData {
+    &__title {
+      font-size: 1.1em;
+      margin: 0 0 0.45rem;
+    }
+
+    &__subtitle {
+      font-size: 1em;
+      margin: 0 0 0.25rem;
+    }
+
+    &__text {
+      font-size: 0.9em;
+    }
+  }
+
+  &__footer {
+    &__link {
+      margin: 0 0 0.75em;
+      font-size: 0.9em;
+      @include from(m) {
+        margin: 0;
+      }
+    }
+  }
+}
