@@ -1,6 +1,7 @@
 import React from "react"
 import BannerSmall from "../../../components/banners/BannerSmall"
 import ServiBannerImg from "../../../assets/img/servicios/servibanner.jpg"
+import ServiciosFlatList from "./ServiciosFlatList"
 
 const ServiciosContent = () => {
   return (
@@ -11,6 +12,8 @@ const ServiciosContent = () => {
         }
         image={ServiBannerImg}
       />
+      <br />
+      <ServiciosFlatList />
     </>
   )
 }
