@@ -34,7 +34,7 @@ const serviciosData = [
   {
     title: "Tapicería y costura",
     description:
-      "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
+      "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
     imgSrc: ServiBannerImg,
     caracteristicas: [
       {

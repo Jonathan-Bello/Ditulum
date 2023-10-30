@@ -8,7 +8,7 @@ import chipJardinaria from "../../../assets/img/servicios/chipJardinaria.jpg"
 
 const ServiciosFlatList = ({ setSetselectedServiceIndex }) => {
   return (
-    <div className="ServiciosFlatList ed-grid">
+    <div className="ServiciosFlatList ed-grid s-mb-4">
       <CardServiciosFlatList
         imgSrc={chipEspacios}
         title={"Diseño de espacios"}
