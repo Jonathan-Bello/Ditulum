@@ -5,6 +5,7 @@ import ServiciosFlatList from "./ServiciosFlatList"
 import ServiciosTitleBanner from "./ServiciosTitleBanner"
 
 import serviciosData from "./serviciosData"
+import ServiciosDetails from "./ServiciosDetails"
 
 const ServiciosContent = () => {
   const [selectedService, setSetselectedService] = useState(serviciosData[0])
@@ -27,6 +28,7 @@ const ServiciosContent = () => {
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <ServiciosTitleBanner {...selectedService} />
+      <ServiciosDetails {...selectedService} />
     </>
   )
 }

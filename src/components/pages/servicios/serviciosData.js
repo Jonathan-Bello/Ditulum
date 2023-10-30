@@ -1,4 +1,5 @@
-import ServiBannerImg from "../../../assets/img/servicios/servibanner.jpg"
+import chipEspacios from "../../../assets/img/servicios/chipEspacios.jpg"
+import chipTapiceria from "../../../assets/img/servicios/chipTapiceria.jpg"
 
 // *Iconos
 import icon1 from "../../../assets/svg/servicios/Icon1.svg"
@@ -11,7 +12,7 @@ const serviciosData = [
     title: "Diseño de espacios",
     description:
       "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
-    imgSrc: ServiBannerImg,
+    imgSrc: chipEspacios,
     caracteristicas: [
       {
         imgIcon: icon1,
@@ -35,7 +36,7 @@ const serviciosData = [
     title: "Tapicería y costura",
     description:
       "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
-    imgSrc: ServiBannerImg,
+    imgSrc: chipTapiceria,
     caracteristicas: [
       {
         imgIcon: icon1,
