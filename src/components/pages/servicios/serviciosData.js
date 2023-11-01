@@ -46,6 +46,29 @@ import jardi9 from "../../../assets/img/servicios/carouseljardineria/jardi9.jpg"
 import jardi10 from "../../../assets/img/servicios/carouseljardineria/jardi10.jpg"
 import jardi11 from "../../../assets/img/servicios/carouseljardineria/jardi11.jpg"
 
+// *GalleryMaseta
+import maseta1 from "../../../assets/img/servicios/carouselmasetas/maseta1.jpg"
+import maseta2 from "../../../assets/img/servicios/carouselmasetas/maseta2.jpg"
+import maseta3 from "../../../assets/img/servicios/carouselmasetas/maseta3.jpg"
+import maseta4 from "../../../assets/img/servicios/carouselmasetas/maseta4.jpg"
+import maseta5 from "../../../assets/img/servicios/carouselmasetas/maseta5.jpg"
+import maseta6 from "../../../assets/img/servicios/carouselmasetas/maseta6.jpg"
+import maseta7 from "../../../assets/img/servicios/carouselmasetas/maseta7.jpg"
+import maseta8 from "../../../assets/img/servicios/carouselmasetas/maseta8.jpg"
+import maseta9 from "../../../assets/img/servicios/carouselmasetas/maseta9.jpg"
+import maseta10 from "../../../assets/img/servicios/carouselmasetas/maseta10.jpg"
+import maseta11 from "../../../assets/img/servicios/carouselmasetas/maseta11.jpg"
+import maseta12 from "../../../assets/img/servicios/carouselmasetas/maseta12.jpg"
+import maseta13 from "../../../assets/img/servicios/carouselmasetas/maseta13.jpg"
+import maseta14 from "../../../assets/img/servicios/carouselmasetas/maseta14.jpg"
+import maseta15 from "../../../assets/img/servicios/carouselmasetas/maseta15.jpg"
+import maseta16 from "../../../assets/img/servicios/carouselmasetas/maseta16.jpg"
+import maseta17 from "../../../assets/img/servicios/carouselmasetas/maseta17.jpg"
+import maseta18 from "../../../assets/img/servicios/carouselmasetas/maseta18.jpg"
+import maseta19 from "../../../assets/img/servicios/carouselmasetas/maseta19.jpg"
+import maseta20 from "../../../assets/img/servicios/carouselmasetas/maseta20.jpg"
+import maseta21 from "../../../assets/img/servicios/carouselmasetas/maseta21.jpg"
+
 // *Iconos
 import icon1 from "../../../assets/svg/servicios/Icon1.svg"
 import icon2 from "../../../assets/svg/servicios/Icon2.svg"
@@ -67,6 +90,10 @@ import icon17 from "../../../assets/svg/servicios/Icon17.svg"
 import icon18 from "../../../assets/svg/servicios/Icon18.svg"
 import icon19 from "../../../assets/svg/servicios/Icon19.svg"
 import icon20 from "../../../assets/svg/servicios/Icon20.svg"
+import icon21 from "../../../assets/svg/servicios/Icon21.svg"
+import icon22 from "../../../assets/svg/servicios/Icon22.svg"
+import icon23 from "../../../assets/svg/servicios/Icon23.svg"
+import icon24 from "../../../assets/svg/servicios/Icon24.svg"
 
 const serviciosData = [
   {
@@ -201,6 +228,52 @@ const serviciosData = [
       {
         imgIcon: icon20,
         title: "Macetas de tronco",
+      },
+    ],
+    imgsGallery: [
+      maseta1,
+      maseta2,
+      maseta3,
+      maseta4,
+      maseta5,
+      maseta6,
+      maseta7,
+      maseta8,
+      maseta9,
+      maseta10,
+      maseta11,
+      maseta12,
+      maseta13,
+      maseta14,
+      maseta15,
+      maseta16,
+      maseta17,
+      maseta18,
+      maseta19,
+      maseta20,
+    ],
+  },
+  {
+    title: "Diseño floral para eventos",
+    description:
+      "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
+    imgSrc: bannerJardineria,
+    caracteristicas: [
+      {
+        imgIcon: icon21,
+        title: "Ramos de novia",
+      },
+      {
+        imgIcon: icon22,
+        title: "Centros de mesa",
+      },
+      {
+        imgIcon: icon23,
+        title: "Accesorios",
+      },
+      {
+        imgIcon: icon24,
+        title: "Arcos florales",
       },
     ],
     imgsGallery: [

@@ -26,6 +26,7 @@ const ServiciosContent = () => {
       />
       <br />
       <ServiciosFlatList
+        selectedServiceIndex={selectedServiceIndex}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <ServiciosTitleBanner {...selectedService} />

@@ -13,10 +13,11 @@
 
     &__img {
       width: 6rem;
+      height: 6rem;
 
       @include from(lg) {
         width: 7.5rem;
-        max-height: 8rem;
+        height: 7.5rem;
       }
     }
 

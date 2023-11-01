@@ -9,7 +9,9 @@ const CardServiciosFlatList = ({
 }) => {
   return (
     <div
-      onClick={() => setSetselectedServiceIndex(index)}
+      onClick={
+        setSetselectedServiceIndex && (() => setSetselectedServiceIndex(index))
+      }
       className={`CardServiciosFlatList ${
         active && "CardServiciosFlatList--active"
       }`}
