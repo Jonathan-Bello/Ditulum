@@ -37,6 +37,12 @@ import icon1 from "../../../assets/svg/servicios/Icon1.svg"
 import icon2 from "../../../assets/svg/servicios/Icon2.svg"
 import icon3 from "../../../assets/svg/servicios/Icon3.svg"
 import icon4 from "../../../assets/svg/servicios/Icon4.svg"
+import icon5 from "../../../assets/svg/servicios/Icon5.svg"
+import icon6 from "../../../assets/svg/servicios/Icon6.svg"
+import icon7 from "../../../assets/svg/servicios/Icon7.svg"
+import icon8 from "../../../assets/svg/servicios/Icon8.svg"
+import icon9 from "../../../assets/svg/servicios/Icon9.svg"
+import icon10 from "../../../assets/svg/servicios/Icon10.svg"
 
 const serviciosData = [
   {
@@ -83,20 +89,28 @@ const serviciosData = [
     imgSrc: bannerTapiceria,
     caracteristicas: [
       {
-        imgIcon: icon1,
-        title: "Diseño de interiores",
+        imgIcon: icon5,
+        title: "Cortinas",
       },
       {
-        imgIcon: icon2,
-        title: "Herrería y carpintería",
+        imgIcon: icon6,
+        title: "Puffs",
       },
       {
-        imgIcon: icon3,
-        title: "Asesoría profesional",
+        imgIcon: icon7,
+        title: "Trabajos de macramé",
       },
       {
-        imgIcon: icon4,
-        title: "Diseño de paisajes",
+        imgIcon: icon8,
+        title: "Camastros",
+      },
+      {
+        imgIcon: icon9,
+        title: "Colchonetas",
+      },
+      {
+        imgIcon: icon10,
+        title: "Toldos",
       },
     ],
     imgsGallery: [
