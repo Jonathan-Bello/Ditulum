@@ -9,7 +9,7 @@ const ServiciosCarousel = ({ imgsGallery }) => {
       </h2>
 
       <CarouselGallery>
-        {imgsGallery.map((img, index) => (
+        {imgsGallery?.map((img, index) => (
           <img
             key={index}
             src={img}

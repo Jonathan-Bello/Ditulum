@@ -1,5 +1,6 @@
 import bannerEspacios from "../../../assets/img/servicios/bannerEspacios.jpg"
 import bannerTapiceria from "../../../assets/img/servicios/bannerTapiceria.jpg"
+import bannerJardineria from "../../../assets/img/servicios/bannerJardineria.jpg"
 
 // *GalleryEspacios
 import espacios1 from "../../../assets/img/servicios/carouselespacios/espacios1.jpg"
@@ -32,6 +33,19 @@ import tapi14 from "../../../assets/img/servicios/carouseltapiceria/tapi14.jpg"
 import tapi15 from "../../../assets/img/servicios/carouseltapiceria/tapi15.jpg"
 import tapi16 from "../../../assets/img/servicios/carouseltapiceria/tapi16.jpg"
 
+// *GalleryJardineria
+import jardi1 from "../../../assets/img/servicios/carouseljardineria/jardi1.jpg"
+import jardi2 from "../../../assets/img/servicios/carouseljardineria/jardi2.jpg"
+import jardi3 from "../../../assets/img/servicios/carouseljardineria/jardi3.jpg"
+import jardi4 from "../../../assets/img/servicios/carouseljardineria/jardi4.jpg"
+import jardi5 from "../../../assets/img/servicios/carouseljardineria/jardi5.jpg"
+import jardi6 from "../../../assets/img/servicios/carouseljardineria/jardi6.jpg"
+import jardi7 from "../../../assets/img/servicios/carouseljardineria/jardi7.jpg"
+import jardi8 from "../../../assets/img/servicios/carouseljardineria/jardi8.jpg"
+import jardi9 from "../../../assets/img/servicios/carouseljardineria/jardi9.jpg"
+import jardi10 from "../../../assets/img/servicios/carouseljardineria/jardi10.jpg"
+import jardi11 from "../../../assets/img/servicios/carouseljardineria/jardi11.jpg"
+
 // *Iconos
 import icon1 from "../../../assets/svg/servicios/Icon1.svg"
 import icon2 from "../../../assets/svg/servicios/Icon2.svg"
@@ -43,6 +57,16 @@ import icon7 from "../../../assets/svg/servicios/Icon7.svg"
 import icon8 from "../../../assets/svg/servicios/Icon8.svg"
 import icon9 from "../../../assets/svg/servicios/Icon9.svg"
 import icon10 from "../../../assets/svg/servicios/Icon10.svg"
+import icon11 from "../../../assets/svg/servicios/Icon11.svg"
+import icon12 from "../../../assets/svg/servicios/Icon12.svg"
+import icon13 from "../../../assets/svg/servicios/Icon13.svg"
+import icon14 from "../../../assets/svg/servicios/Icon14.svg"
+import icon15 from "../../../assets/svg/servicios/Icon15.svg"
+import icon16 from "../../../assets/svg/servicios/Icon16.svg"
+import icon17 from "../../../assets/svg/servicios/Icon17.svg"
+import icon18 from "../../../assets/svg/servicios/Icon18.svg"
+import icon19 from "../../../assets/svg/servicios/Icon19.svg"
+import icon20 from "../../../assets/svg/servicios/Icon20.svg"
 
 const serviciosData = [
   {
@@ -130,6 +154,67 @@ const serviciosData = [
       tapi14,
       tapi15,
       tapi16,
+    ],
+  },
+  {
+    title: "Vivero, macetas y jardinería",
+    description:
+      "Diseñamos ambientes ideales para que puedas trabajar o descansar, además de elevar tu calidad de vida.",
+    imgSrc: bannerJardineria,
+    caracteristicas: [
+      {
+        imgIcon: icon11,
+        title: "Árboles",
+      },
+      {
+        imgIcon: icon12,
+        title: "Palmas",
+      },
+      {
+        imgIcon: icon13,
+        title: "Semillas",
+      },
+      {
+        imgIcon: icon14,
+        title: "Piedra decorativa",
+      },
+      {
+        imgIcon: icon15,
+        title: "Macetas de barro",
+      },
+      {
+        imgIcon: icon16,
+        title: "Frutales",
+      },
+      {
+        imgIcon: icon17,
+        title: "Ornamentales",
+      },
+      {
+        imgIcon: icon18,
+        title: "Sustratos y abonos",
+      },
+      {
+        imgIcon: icon19,
+        title: "Maceta de cemento",
+      },
+      {
+        imgIcon: icon20,
+        title: "Macetas de tronco",
+      },
+    ],
+    imgsGallery: [
+      jardi1,
+      jardi2,
+      jardi3,
+      jardi4,
+      jardi5,
+      jardi6,
+      jardi7,
+      jardi8,
+      jardi9,
+      jardi10,
+      jardi11,
     ],
   },
 ]

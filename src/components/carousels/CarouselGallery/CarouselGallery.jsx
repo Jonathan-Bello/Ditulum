@@ -13,6 +13,7 @@ const CarouselGallery = ({ children }) => {
         slidesToScroll={4}
         speed={500}
         initialSlide={0}
+        // arrows={false}
         responsive={[
           {
             breakpoint: 1024,

@@ -1,9 +1,20 @@
 .CarouselGallery {
+  width: 100%;
+
   .slick-arrow {
     border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     z-index: 20;
+
+    &.slick-prev {
+      left: -7px;
+    }
+
+    &.slick-next {
+      right: -7px;
+    }
+
     @include from(xl) {
       width: 3rem;
       height: 3rem;
@@ -20,7 +31,7 @@
     &::before,
     &::after {
       color: var(--color-secondary-500);
-      font-size: 2rem;
+      font-size: 2.2rem;
 
       @include from(xl) {
         font-size: 3rem;
