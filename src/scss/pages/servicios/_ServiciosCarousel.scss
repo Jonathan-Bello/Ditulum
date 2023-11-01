@@ -1,0 +1,17 @@
+.ServiciosCarousel {
+  &__title {
+    color: var(--color-secondary-500);
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 2em;
+    max-width: 30rem;
+
+    & b {
+      font-weight: 600;
+    }
+  }
+
+  &__img {
+    padding: 0 0.5em;
+  }
+}

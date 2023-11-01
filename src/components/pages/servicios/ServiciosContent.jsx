@@ -6,6 +6,7 @@ import ServiciosTitleBanner from "./ServiciosTitleBanner"
 
 import serviciosData from "./serviciosData"
 import ServiciosDetails from "./ServiciosDetails"
+import ServiciosCarousel from "./ServiciosCarousel"
 
 const ServiciosContent = () => {
   const [selectedService, setSetselectedService] = useState(serviciosData[0])
@@ -29,6 +30,7 @@ const ServiciosContent = () => {
       />
       <ServiciosTitleBanner {...selectedService} />
       <ServiciosDetails {...selectedService} />
+      <ServiciosCarousel {...selectedService} />
     </>
   )
 }
