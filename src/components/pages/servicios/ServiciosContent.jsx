@@ -8,9 +8,13 @@ import serviciosData from "./serviciosData"
 import ServiciosDetails from "./ServiciosDetails"
 import ServiciosCarousel from "./ServiciosCarousel"
 
-const ServiciosContent = () => {
-  const [selectedService, setSetselectedService] = useState(serviciosData[0])
-  const [selectedServiceIndex, setSetselectedServiceIndex] = useState(0)
+const ServiciosContent = ({ initIndexService }) => {
+  const [selectedServiceIndex, setSetselectedServiceIndex] = useState(
+    initIndexService ? initIndexService : 0
+  )
+  const [selectedService, setSetselectedService] = useState(
+    serviciosData[selectedServiceIndex]
+  )
 
   useEffect(() => {
     setSetselectedService(serviciosData[selectedServiceIndex])

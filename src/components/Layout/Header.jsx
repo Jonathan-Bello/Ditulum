@@ -18,10 +18,10 @@ const Header = ({ siteTitle }) => {
       {width > 1020 && (
         <div className="lg-40">
           <div className="Header__linkList">
-            <Link to="#">Home</Link>
-            <Link to="#">Servicios</Link>
-            <Link to="#">Nosotros</Link>
-            <Link to="#">Tienda</Link>
+            <Link to="/">Home</Link>
+            <Link to="/servicios">Servicios1</Link>
+            <Link to="/nosotros">Nosotros</Link>
+            <Link to="/tienda">Tienda</Link>
           </div>
         </div>
       )}
@@ -34,8 +34,8 @@ const Header = ({ siteTitle }) => {
 
       {width > 1020 && (
         <div className="Header__linkList lg-20">
-          <Link to="#">Blog</Link>
-          <Link to="#">Contacto</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/contacto">Contacto</Link>
         </div>
       )}
 

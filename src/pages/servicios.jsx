@@ -2,10 +2,13 @@ import React from "react"
 import Layout from "../components/Layout"
 import ServiciosContent from "../components/pages/servicios/ServiciosContent"
 
-const ServiciosPage = () => {
+const ServiciosPage = ({ location }) => {
+  const { state = {} } = location
+  const { selectedServices } = state
+
   return (
     <Layout>
-      <ServiciosContent />
+      <ServiciosContent initIndexService={selectedServices} />
     </Layout>
   )
 }

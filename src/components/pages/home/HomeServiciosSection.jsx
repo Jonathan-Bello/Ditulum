@@ -18,26 +18,31 @@ const HomeServiciosSection = () => {
 
       <div className="HomeServiciosSection__servicios">
         <CardServiHome
+          index={0}
           imagen={servidiseño}
           title={"Diseño de espacios"}
-          url={"#"}
+          url={"/servicios"}
         />
         <CardServiHome
+          index={1}
           imagen={servitapiceria}
           title={"Tapicería y costura"}
-          url={"#"}
+          url={"/servicios"}
         />
         <CardServiHome
+          index={2}
           imagen={servijardineria}
           title={"Vivero, macetas y jardinería"}
-          url={"#"}
+          url={"/servicios"}
         />
         <CardServiHome
+          index={3}
           imagen={serviflores}
           title={"Diseño floral para eventos"}
-          url={"#"}
+          url={"/servicios"}
         />
         <CardServiHome
+          index={4}
           imagen={serviProx}
           title={"Productos importados"}
           url={"#"}

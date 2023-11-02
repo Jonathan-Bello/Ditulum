@@ -17,7 +17,7 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
           </Link>
         </li>
         <li className="NavMobile__list__item">
-          <Link to="/" className="NavMobile__list__item__link">
+          <Link to="/servicios" className="NavMobile__list__item__link">
             Servicios
           </Link>
         </li>
