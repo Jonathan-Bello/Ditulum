@@ -1,6 +1,7 @@
 import bannerEspacios from "../../../assets/img/servicios/bannerEspacios.jpg"
 import bannerTapiceria from "../../../assets/img/servicios/bannerTapiceria.jpg"
 import bannerJardineria from "../../../assets/img/servicios/bannerJardineria.jpg"
+import bannerFloral from "../../../assets/img/servicios/bannerFloral.jpg"
 
 // *GalleryEspacios
 import espacios1 from "../../../assets/img/servicios/carouselespacios/espacios1.jpg"
@@ -257,7 +258,7 @@ const serviciosData = [
     title: "Diseño floral para eventos",
     description:
       "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
-    imgSrc: bannerJardineria,
+    imgSrc: bannerFloral,
     caracteristicas: [
       {
         imgIcon: icon21,

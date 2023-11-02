@@ -27,15 +27,15 @@ const ServiciosFlatList = ({
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
-        imgSrc={chipFloral}
-        title={"Diseño floral para eventos"}
+        imgSrc={chipJardinaria}
+        title={"Vivero, macetas y jardinería"}
         active={selectedServiceIndex == 2 ? true : false}
         index={2}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
-        imgSrc={chipJardinaria}
-        title={"Vivero, macetas y jardinería"}
+        imgSrc={chipFloral}
+        title={"Diseño floral para eventos"}
         active={selectedServiceIndex == 3 ? true : false}
         index={3}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
