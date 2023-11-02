@@ -252,6 +252,7 @@ const serviciosData = [
       maseta18,
       maseta19,
       maseta20,
+      maseta21,
     ],
   },
   {

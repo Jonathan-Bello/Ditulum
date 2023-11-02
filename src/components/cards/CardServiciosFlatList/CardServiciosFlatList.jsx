@@ -14,7 +14,9 @@ const CardServiciosFlatList = ({
       }
       className={`CardServiciosFlatList ${
         active && "CardServiciosFlatList--active"
-      }`}
+      }
+      ${!setSetselectedServiceIndex && "CardServiciosFlatList--desactive"}
+      `}
     >
       {imgSrc ? (
         <img

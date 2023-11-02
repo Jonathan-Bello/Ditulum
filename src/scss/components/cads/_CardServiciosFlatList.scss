@@ -44,6 +44,17 @@
     }
   }
 
+  &--desactive {
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.4) 100%
+        ),
+        url(""), rgba(211, 211, 211, 0.15) 50% / cover no-repeat;
+    }
+  }
+
   @include from(lg) {
     width: 50%;
   }
