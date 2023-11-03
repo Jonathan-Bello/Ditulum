@@ -7,7 +7,7 @@ import featureTulum from "../../../assets/img/home/featureTulum.png"
 
 const HomeFeaturesSection = () => {
   return (
-    <div className="HomeFeaturesSection ed-grid">
+    <div className="HomeFeaturesSection ed-grid s-mb-2">
       <h2 className="HomeFeaturesSection__title">
         Nos comprometemos con <b>elevar tu estilo de vida</b>
       </h2>
