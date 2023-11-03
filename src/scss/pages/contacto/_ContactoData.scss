@@ -1,0 +1,50 @@
+.ContactoData {
+  padding-top: 4rem;
+}
+
+.ContactoDataItem {
+  &__titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.75em;
+
+    &__icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.5rem;
+    }
+
+    &__title {
+      color: var(--color-grey-900);
+      font-size: 1.25em;
+      font-weight: 600;
+      line-height: 140%;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-grey-900);
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 0.25em;
+  }
+
+  &__text {
+    a {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    &__icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+}

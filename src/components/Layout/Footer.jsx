@@ -47,7 +47,9 @@ const Footer = () => {
 
             <h5 className="Footer__contactData__title">Whatsapp</h5>
             <p className="Footer__contactData__text">
-              <a href="tel:9841528989">984 152 8989</a>
+              <a href="https://api.whatsapp.com/send?phone=5219841528989" target="_blank">
+                984 152 8989
+              </a>
             </p>
           </div>
         </div>
