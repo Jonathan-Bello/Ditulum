@@ -21,6 +21,26 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             Servicios
           </Link>
         </li>
+        <li className="NavMobile__list__item">
+          <Link to="/nosotros" className="NavMobile__list__item__link">
+            Nosotros
+          </Link>
+        </li>
+        <li className="NavMobile__list__item">
+          <Link to="/tienda" className="NavMobile__list__item__link">
+            Tienda
+          </Link>
+        </li>
+        <li className="NavMobile__list__item">
+          <Link to="/blog" className="NavMobile__list__item__link">
+            Blog
+          </Link>
+        </li>
+        <li className="NavMobile__list__item">
+          <Link to="/contacto" className="NavMobile__list__item__link">
+            Contacto
+          </Link>
+        </li>
       </ul>
     </div>
   )
