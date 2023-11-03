@@ -9,21 +9,23 @@
 
   &__img {
     max-width: 200px;
-    margin-bottom: 0.5em;
+    margin-bottom: 1rem;
 
     @include from(lg) {
       max-width: 280px;
+      margin-bottom: 1.5rem;
     }
   }
 
   &__title {
-    color: var(--Marrn-claro, #a58263);
+    color: var(--color-primary-600);
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 500;
 
     @include from(lg) {
       max-width: 280px;
+      font-size: 1.2em;
     }
   }
 }
