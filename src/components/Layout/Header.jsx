@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
         <div className="lg-40">
           <div className="Header__linkList">
             <Link to="/">Home</Link>
-            <Link to="/servicios">Servicios1</Link>
+            <Link to="/servicios">Servicios</Link>
             <Link to="/nosotros">Nosotros</Link>
             <Link to="/tienda">Tienda</Link>
           </div>
