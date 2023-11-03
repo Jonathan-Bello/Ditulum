@@ -7,8 +7,12 @@ const NavSocialMedia = () => {
   return (
     <div className="NavSocialMedia">
       <AiOutlineShoppingCart className="NavSocialMedia__icon" />
-      <RiFacebookFill className="NavSocialMedia__icon" />
-      <AiOutlineInstagram className="NavSocialMedia__icon" />
+      <a href="https://www.facebook.com/ditulum/" target="_blank">
+        <RiFacebookFill className="NavSocialMedia__icon" />
+      </a>
+      <a href="https://www.instagram.com/ditulum/?hl=es" target="_blank">
+        <AiOutlineInstagram className="NavSocialMedia__icon" />
+      </a>
     </div>
   )
 }

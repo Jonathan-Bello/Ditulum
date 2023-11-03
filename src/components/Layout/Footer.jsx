@@ -34,8 +34,15 @@ const Footer = () => {
               alt="Logo"
             />
             <div className="Footer__BrandContainer__socialmedia">
-              <AiOutlineInstagram className="Footer__BrandContainer__socialmedia--icon" />
-              <RiFacebookFill className="Footer__BrandContainer__socialmedia--icon" />
+              <a
+                href="https://www.instagram.com/ditulum/?hl=es"
+                target="_blank"
+              >
+                <AiOutlineInstagram className="Footer__BrandContainer__socialmedia--icon" />
+              </a>
+              <a href="https://www.facebook.com/ditulum/" target="_blank">
+                <RiFacebookFill className="Footer__BrandContainer__socialmedia--icon" />
+              </a>
             </div>
           </div>
 
@@ -47,7 +54,10 @@ const Footer = () => {
 
             <h5 className="Footer__contactData__title">Whatsapp</h5>
             <p className="Footer__contactData__text">
-              <a href="https://api.whatsapp.com/send?phone=5219841528989" target="_blank">
+              <a
+                href="https://api.whatsapp.com/send?phone=5219841528989"
+                target="_blank"
+              >
                 984 152 8989
               </a>
             </p>
