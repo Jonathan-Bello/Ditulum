@@ -3,7 +3,10 @@ import React from "react"
 
 const CardMancha = ({ imgSrc, title, url, onClick }) => {
   return (
-    <article className="CardMancha" onClick={onClick}>
+    <article
+      className={`CardMancha ${onClick ? "CardMancha--active" : ""}`}
+      onClick={onClick}
+    >
       {/* <Link to={url}> */}
       <img className="CardMancha__img" src={imgSrc} alt="imgServicio" />
       {/* </Link> */}

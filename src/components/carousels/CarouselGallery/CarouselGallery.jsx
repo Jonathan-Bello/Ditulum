@@ -1,7 +1,5 @@
 import React from "react"
 import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 
 const CarouselGallery = ({ children }) => {
   return (
@@ -13,7 +11,6 @@ const CarouselGallery = ({ children }) => {
         slidesToScroll={4}
         speed={500}
         initialSlide={0}
-        // arrows={false}
         responsive={[
           {
             breakpoint: 1024,
