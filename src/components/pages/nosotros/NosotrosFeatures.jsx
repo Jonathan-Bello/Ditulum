@@ -30,29 +30,31 @@ const NosotrosFeatures = () => {
           <CardMancha
             imgSrc={equipoImg}
             title={"Equipo Ditulum"}
-            // onClick={() => handlerModal(0)}
+            onClick={() => handlerModal(0)}
           />
           <CardMancha
             imgSrc={showroomImg}
             title={"Showroom"}
-            // onClick={() => handlerModal(1)}
+            onClick={() => handlerModal(1)}
           />
         </div>
       </div>
 
       <Modal showModal={showModal} setShowModal={setShowModal}>
-        <Slider
-          dots={false}
-          infinite={true}
-          slidesToShow={1}
-          slidesToScroll={1}
-          speed={500}
-          initialSlide={1}
-        >
-          {modaldata?.map((img, index) => (
-            <img key={index} src={img} className="Modal__img" />
-          ))}
-        </Slider>
+        <div>
+          <Slider
+            dots={false}
+            infinite={true}
+            slidesToShow={1}
+            slidesToScroll={1}
+            speed={500}
+            initialSlide={1}
+          >
+            {modaldata?.map((img, index) => (
+              <img key={index} src={img} className="Modal__img" />
+            ))}
+          </Slider>
+        </div>
       </Modal>
     </>
   )
