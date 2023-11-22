@@ -13,7 +13,7 @@ const ServiciosDetails = ({ caracteristicas }) => {
       className={`ServiciosDetails ed-grid s-grid-2 m-grid-2 lg-grid-${lgColNumbers}`}
     >
       {caracteristicas?.map(item => (
-        <div className="ServiciosDetails__item">
+        <div className="ServiciosDetails__item" key={item.title}>
           <img
             className="ServiciosDetails__item__img"
             src={item.imgIcon}

@@ -22,6 +22,23 @@ const Header = ({ siteTitle }) => {
             <Link to="/servicios">Servicios</Link>
             <Link to="/nosotros">Nosotros</Link>
             <Link to="/tienda">Tienda</Link>
+            <div className="Header__linkList__subList">
+              <Link to="/servicios" state={{ selectedServices: 0 }}>
+                Diseño de espacios
+              </Link>
+              <Link to="/servicios" state={{ selectedServices: 1 }}>
+                Tapicería y costura
+              </Link>
+              <Link to="/servicios" state={{ selectedServices: 2 }}>
+                Vivero, macetas y jardinería
+              </Link>
+              <Link to="/servicios" state={{ selectedServices: 3 }}>
+                Diseño floral para eventos
+              </Link>
+              <Link to="#" state={{ selectedServices: 3 }}>
+                Productos importados
+              </Link>
+            </div>
           </div>
         </div>
       )}

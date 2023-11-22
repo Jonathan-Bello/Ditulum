@@ -70,8 +70,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     z-index: 100;
+
+    &__subList {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+
+      .NavMobile__list__item__link {
+        color: var(--color-grey-800);
+        font-family: "Montserrat";
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .NavMobile__list__item__link.disable {
+        color: var(--Gris, #abaaaa);
+      }
+    }
 
     &__item {
       &__link {
