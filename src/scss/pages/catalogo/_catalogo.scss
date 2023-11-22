@@ -1,0 +1,16 @@
+.CatalogoContent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & p {
+    text-align: center;
+    margin: 0;
+  }
+
+  & a {
+    text-decoration: underline;
+    padding-top: 0.5rem;
+  }
+}
