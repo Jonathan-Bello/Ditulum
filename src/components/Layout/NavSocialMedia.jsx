@@ -6,11 +6,19 @@ import { AiOutlineShoppingCart } from "@react-icons/all-files/ai/AiOutlineShoppi
 const NavSocialMedia = () => {
   return (
     <div className="NavSocialMedia">
-      <AiOutlineShoppingCart className="NavSocialMedia__icon" />
-      <a href="https://www.facebook.com/ditulum/" target="_blank">
+      {/* <AiOutlineShoppingCart className="NavSocialMedia__icon" /> */}
+      <a
+        className="NavSocialMedia__link"
+        href="https://www.facebook.com/ditulum/"
+        target="_blank"
+      >
         <RiFacebookFill className="NavSocialMedia__icon" />
       </a>
-      <a href="https://www.instagram.com/ditulum/?hl=es" target="_blank">
+      <a
+        className="NavSocialMedia__link"
+        href="https://www.instagram.com/ditulum/?hl=es"
+        target="_blank"
+      >
         <AiOutlineInstagram className="NavSocialMedia__icon" />
       </a>
     </div>

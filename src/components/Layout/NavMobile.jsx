@@ -77,13 +77,8 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
           </Link>
         </li>
         <li className="NavMobile__list__item">
-          <Link to="/tienda" className="NavMobile__list__item__link">
-            Tienda
-          </Link>
-        </li>
-        <li className="NavMobile__list__item">
-          <Link to="/blog" className="NavMobile__list__item__link">
-            Blog
+          <Link to="/catalogo" className="NavMobile__list__item__link">
+            Catálogo
           </Link>
         </li>
         <li className="NavMobile__list__item">

@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="Header">
-      {width > 1024 && (
+      {width >= 1024 && (
         <div className="lg-40">
           <div className="Header__linkList">
             <Link to="/">Home</Link>
@@ -77,7 +77,6 @@ const Header = ({ siteTitle }) => {
               </div>
             </div>
             <Link to="/nosotros">Nosotros</Link>
-            <Link to="/tienda">Tienda</Link>
           </div>
         </div>
       )}
@@ -85,28 +84,34 @@ const Header = ({ siteTitle }) => {
       <div className="Header__logo lg-20">
         <img
           className="Header__logo__img"
-          src={width > 1024 ? DeskLogo : MobileLogo}
+          src={width >= 1024 ? DeskLogo : MobileLogo}
           alt="icon"
         />
       </div>
 
-      {width > 1024 && (
+      {width >= 1024 && (
         <div className="Header__linkList lg-20">
-          <Link to="/blog">Blog</Link>
+          <Link to="/catalogo">Catálogo</Link>
           <Link to="/contacto">Contacto</Link>
         </div>
       )}
 
       <div className="Header__content lg-20">
         <NavSocialMedia />
-        <b>ES | EN</b>
+        {/* <b
+          style={{
+            opacity: 0,
+          }}
+        >
+          ES | EN
+        </b> */}
         <AiOutlineMenu
           className="Header__menuIcon"
           onClick={() => setShowMenu(!showMenu)}
         />
       </div>
 
-      {width < 1024 && (
+      {width <= 1024 && (
         <NavMobile showMenu={showMenu} setShowMenu={setShowMenu} />
       )}
     </header>

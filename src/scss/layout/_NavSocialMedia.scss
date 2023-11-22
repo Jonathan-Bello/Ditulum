@@ -1,9 +1,9 @@
 .NavSocialMedia {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 1rem;
 
-  &__icon {
+  &__icon, &__link {
     width: 1.75em;
     height: 1.75em;
   }
