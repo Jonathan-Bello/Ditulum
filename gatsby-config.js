@@ -34,8 +34,21 @@ module.exports = {
         start_url: `/`,
         background_color: `#F4F2F4`,
         display: `minimal-ui`,
-        icon: `src/assets/img/favicon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/img/favicon.png`,
       },
     },
+    {
+    resolve: `gatsby-plugin-intl`,
+    options: {
+      // ruta al recurso JSON del idioma
+      path: `${__dirname}/src/intl`,
+      // idiomas soportados
+      languages: [`en`, `es`],
+      // idioma predeterminado
+      defaultLanguage: `es`,
+      // opción para redirigir a `/es` cuando se conecta a `/`
+      redirect: true,
+    },
+  },
   ],
 }

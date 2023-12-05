@@ -8,6 +8,7 @@ import useScreenSize from "../../hook/useScreenSize"
 
 import MobileLogo from "../../assets/svg/MobileLogo.svg"
 import DeskLogo from "../../assets/svg/DeskLogo.svg"
+import LangSelector from "./LangSelector"
 
 const Header = ({ siteTitle }) => {
   const { width, height } = useScreenSize()
@@ -98,13 +99,7 @@ const Header = ({ siteTitle }) => {
 
       <div className="Header__content lg-20">
         <NavSocialMedia />
-        {/* <b
-          style={{
-            opacity: 0,
-          }}
-        >
-          ES | EN
-        </b> */}
+        <LangSelector />
         <AiOutlineMenu
           className="Header__menuIcon"
           onClick={() => setShowMenu(!showMenu)}

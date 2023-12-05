@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
 import Banner from "../../banners/Banner"
 import BannerImg from "../../../assets/img/home/mainbanner.jpg"
 import HomeServiciosSection from "./HomeServiciosSection"
@@ -6,15 +7,11 @@ import HomeFeaturesSection from "./HomeFeaturesSection"
 import HomeInstagramSection from "./HomeInstagramSection"
 
 const HomeContent = () => {
+  const intl = useIntl()
+
   return (
     <>
-      <Banner
-        image={BannerImg}
-        text={
-          "Encuentra el <b>equilibrio entre la naturaleza y los espacios</b> que habitas"
-        }
-      />
-
+      <Banner image={BannerImg} text={intl.formatMessage({ id: "banner" })} />
       <HomeServiciosSection />
       <HomeFeaturesSection />
       <HomeInstagramSection />
