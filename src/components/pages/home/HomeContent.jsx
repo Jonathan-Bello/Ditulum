@@ -1,5 +1,5 @@
 import React from "react"
-import { useIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl"
 import Banner from "../../banners/Banner"
 import BannerImg from "../../../assets/img/home/mainbanner.jpg"
 import HomeServiciosSection from "./HomeServiciosSection"

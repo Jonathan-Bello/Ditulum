@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import insta from "../../../assets/img/home/insta.jpg"
 import insta2 from "../../../assets/img/home/insta2.jpg"
 import insta3 from "../../../assets/img/home/insta3.jpg"
@@ -7,11 +8,16 @@ import insta5 from "../../../assets/img/home/insta5.jpg"
 import insta6 from "../../../assets/img/home/insta6.jpg"
 
 const HomeInstagramSection = () => {
+  const intl = useIntl()
+
   return (
     <section className="HomeInstagramSection ed-grid">
-      <h2 className="HomeInstagramSection__title">
-        Descubre más sobre la <b>magia de Ditulum</b>
-      </h2>
+      <h2
+        className="HomeInstagramSection__title"
+        dangerouslySetInnerHTML={{
+          __html: intl.formatMessage({ id: "instagram.title" }),
+        }}
+      />
 
       <div className="HomeInstagramSection__gallery ed-grid s-grid-2 m-grid-3 row-gap s-mb-3">
         <img src={insta} alt="insta" />
@@ -23,9 +29,11 @@ const HomeInstagramSection = () => {
       </div>
 
       <a
-      className="HomeInstagramSection__instaLink"
-       href="https://www.instagram.com/ditulum" target="_blank">
-        Ir a Instagram
+        className="HomeInstagramSection__instaLink"
+        href="https://www.instagram.com/ditulum"
+        target="_blank"
+      >
+        {intl.formatMessage({ id: "instagram.link" })}
       </a>
     </section>
   )

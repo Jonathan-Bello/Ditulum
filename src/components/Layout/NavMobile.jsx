@@ -1,10 +1,13 @@
 import React from "react"
 import { GrClose } from "@react-icons/all-files/gr/GrClose"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-intl"
 
 const NavMobile = ({ showMenu, setShowMenu }) => {
   const handlerSubMenu = () => {
-    if (window.location.pathname === "/servicios/") {
+    if (
+      window.location.pathname === "/en/servicios/" ||
+      window.location.pathname === "/es/servicios/"
+    ) {
       window.location.reload()
     }
   }
@@ -23,7 +26,9 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
           </Link>
         </li>
         <li className="NavMobile__list__item">
-          <Link to="/servicios" className="NavMobile__list__item__link">
+          <Link to="/servicios" className="NavMobile__list__item__link"
+            onClick={() => handlerSubMenu()}
+          >
             Servicios
           </Link>
         </li>

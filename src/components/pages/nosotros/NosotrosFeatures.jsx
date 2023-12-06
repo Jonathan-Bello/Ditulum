@@ -25,7 +25,7 @@ const NosotrosFeatures = () => {
           Piezas hechas con el <b>corazón</b>
         </h2>
 
-        <div className="HomeFeaturesSection__feutureList ">
+        <div className="HomeFeaturesSection__featureList ">
           <CardMancha imgSrc={artesanosImg} title={"Artesanos Ditulum"} />
           <CardMancha
             imgSrc={equipoImg}

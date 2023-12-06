@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link } from "gatsby-plugin-intl"
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu"
 
 import NavMobile from "./NavMobile"
@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
   }
 
   const handlerSubListLink = () => {
-    if (window.location.pathname === "/servicios/") {
+    if (window.location.pathname === "/en/servicios/" || window.location.pathname === "/es/servicios/") {
       window.location.reload()
     }
   }
@@ -32,7 +32,12 @@ const Header = ({ siteTitle }) => {
           <div className="Header__linkList">
             <Link to="/">Home</Link>
             <div className="Header__linkList--servicios">
-              <Link to="#" onClick={handlerSubList}>
+              <Link
+                onClick={e => {
+                  e.preventDefault()
+                  handlerSubList()
+                }}
+              >
                 Servicios
               </Link>
               <div
@@ -69,9 +74,10 @@ const Header = ({ siteTitle }) => {
                   Diseño floral para eventos
                 </Link>
                 <Link
-                  to="#"
-                  state={{ selectedServices: 3 }}
-                  onClick={handlerSubListLink}
+                  onClick={e => e.preventDefault()}
+                  style={{
+                    color: "gray",
+                  }}
                 >
                   Productos importados
                 </Link>

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 const CardMancha = ({ imgSrc, title, url, onClick }) => {
