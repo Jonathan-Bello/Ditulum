@@ -75,5 +75,27 @@
       "title": "Imported products"
     },
     "carouselTitle": "<b>We create stories</b> with you in the spaces you live in"
+  },
+  "aboutUs": {
+    "banner": "This is where it all <b>begins</b>",
+    "bio": {
+      "subtitle": "Foundress"
+    },
+    "content": {
+      "text1": "It is said that each space that we live in contains unique stories that are told through the objects that compose it. These become experiences echoing in every corner, shaping who we are.",
+      "text2": "It's also said that, when the time comes, these stories will find meaning and bring us back to that place that makes us feel special. It will be then when the objects, loaded with meaning, will nestle in our hearts.",
+      "text3": "At Ditulum, we not only create objects with heart, we also help you design that place where you can sow your stories and feel secure. A refuge that connects you with nature and allows you to look within.",
+      "slogan": "From my heart to yours, Ditulum,"
+    },
+    "features": {
+      "title": " Pieces made from <b>heart</b>",
+      "feature1": "Ditulum's Artisans",
+      "feature2": "Ditulum's Team",
+      "feature3": "Showroom"
+    },
+    "subBanner": {
+      "text": "<b>Ditulum’s products and projects</b> are made by Mexican artisans that put much effort and dedication in their daily work.",
+      "title": "Every piece is as unique as the person who made it."
+    }
   }
 }

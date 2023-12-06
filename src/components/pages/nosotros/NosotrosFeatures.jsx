@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import Slider from "react-slick"
 import CardMancha from "../../cards/CardMancha"
 
@@ -10,6 +11,8 @@ import Modal from "../../modals/Modal"
 import imgData from "./imgData"
 
 const NosotrosFeatures = () => {
+  const intl = useIntl()
+
   const [showModal, setShowModal] = useState(false)
   const [modaldata, setModaldata] = useState(imgData[0])
 
@@ -21,20 +24,26 @@ const NosotrosFeatures = () => {
   return (
     <>
       <div className="HomeFeaturesSection ed-grid">
-        <h2 className="HomeFeaturesSection__title">
-          Piezas hechas con el <b>corazón</b>
-        </h2>
+        <h2
+          className="HomeFeaturesSection__title"
+          dangerouslySetInnerHTML={{
+            __html: intl.formatMessage({ id: "aboutUs.features.title" }),
+          }}
+        />
 
         <div className="HomeFeaturesSection__featureList ">
-          <CardMancha imgSrc={artesanosImg} title={"Artesanos Ditulum"} />
+          <CardMancha
+            imgSrc={artesanosImg}
+            title={intl.formatMessage({ id: "aboutUs.features.feature1" })}
+          />
           <CardMancha
             imgSrc={equipoImg}
-            title={"Equipo Ditulum"}
+            title={intl.formatMessage({ id: "aboutUs.features.feature2" })}
             onClick={() => handlerModal(0)}
           />
           <CardMancha
             imgSrc={showroomImg}
-            title={"Showroom"}
+            title={intl.formatMessage({ id: "aboutUs.features.feature3" })}
             onClick={() => handlerModal(1)}
           />
         </div>

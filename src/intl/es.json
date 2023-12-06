@@ -21,59 +21,81 @@
       "link": "Ir a Instagram"
     }
   },
-  "services" : {
-    "banner" : "Convertimos cualquier espacio en el recinto perfecto que <b>conecte con el mundo natural</b>",
-    "espacios" : {
+  "services": {
+    "banner": "Convertimos cualquier espacio en el recinto perfecto que <b>conecte con el mundo natural</b>",
+    "espacios": {
       "title": "Diseño de espacios",
-      "description" : "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
-      "details" : {
-        "detail1" : "Diseño de interiores",
-        "detail2" : "Herrería y carpintería",
-        "detail3" : "Asesoría profesional",
-        "detail4" : "Diseño de paisajes"
+      "description": "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
+      "details": {
+        "detail1": "Diseño de interiores",
+        "detail2": "Herrería y carpintería",
+        "detail3": "Asesoría profesional",
+        "detail4": "Diseño de paisajes"
       }
     },
-    "tapiceria" : {
+    "tapiceria": {
       "title": "Tapicería y costura",
-      "description" : "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
-      "details" : {
-        "detail1" : "Cortinas",
-        "detail2" : "Puffs",
-        "detail3" : "Trabajos de macramé",
-        "detail4" : "Camastros",
-        "detail5" : "Colchonetas",
-        "detail6" : "Toldos"
+      "description": "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
+      "details": {
+        "detail1": "Cortinas",
+        "detail2": "Puffs",
+        "detail3": "Trabajos de macramé",
+        "detail4": "Camastros",
+        "detail5": "Colchonetas",
+        "detail6": "Toldos"
       }
     },
-    "jardineria" : {
+    "jardineria": {
       "title": "Vivero, macetas y jardinería",
-      "description" : "Diseñamos ambientes ideales para que puedas trabajar o descansar, además de elevar tu calidad de vida.",
-      "details" : {
-        "detail1" : "Árboles",
-        "detail2" : "Palmas",
-        "detail3" : "Semillas",
-        "detail4" : "Piedra decorativa",
-        "detail5" : "Macetas de barro",
-        "detail6" : "Frutales",
-        "detail7" : "Ornamentales",
-        "detail8" : "Sustratos y abonos",
-        "detail9" : "Maceta de cemento",
-        "detail10" : "Macetas de tronco"
+      "description": "Diseñamos ambientes ideales para que puedas trabajar o descansar, además de elevar tu calidad de vida.",
+      "details": {
+        "detail1": "Árboles",
+        "detail2": "Palmas",
+        "detail3": "Semillas",
+        "detail4": "Piedra decorativa",
+        "detail5": "Macetas de barro",
+        "detail6": "Frutales",
+        "detail7": "Ornamentales",
+        "detail8": "Sustratos y abonos",
+        "detail9": "Maceta de cemento",
+        "detail10": "Macetas de tronco"
       }
     },
     "floral": {
       "title": "Diseño floral para eventos",
-      "description" : "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
-      "details" : {
-        "detail1" : "Ramos de novia",
-        "detail2" : "Centros de mesa",
-        "detail3" : "Accesorios",
-        "detail4" : "Arcos florales"
+      "description": "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
+      "details": {
+        "detail1": "Ramos de novia",
+        "detail2": "Centros de mesa",
+        "detail3": "Accesorios",
+        "detail4": "Arcos florales"
       }
     },
     "importados": {
       "title": "Productos importados"
     },
-    "carouselTitle" : "<b>Creamos historias contigo</b> en los espacios que habitas"
+    "carouselTitle": "<b>Creamos historias contigo</b> en los espacios que habitas"
+  },
+  "aboutUs": {
+    "banner": "Aquí es donde <b>todo comienza</b>",
+    "bio": {
+      "subtitle": "Fundadora"
+    },
+    "content": {
+      "text1": "Se dice que en cada espacio habitan historias únicas que se cuentan a través de los objetos que lo componen. Estos se convierten en experiencias que resuenan en cada rincón y nos hacen ser quienes somos.",
+      "text2": "Se dice que en cada espacio habitan historias únicas que se cuentan a través de los objetos que lo componen. Estos se convierten en experiencias que resuenan en cada rincón y nos hacen ser quienes somos.",
+      "text3" : "En Ditulum, no solo creamos objetos con corazón, te ayudamos a diseñar ese lugar donde puedas sembrar tus historias y sentirte seguro. Un refugio que te conecta con la naturaleza y te permite mirar a tu interior.",
+      "slogan" : "De mi corazón al de ustedes,"
+    },
+    "features" : {
+      "title" : "Piezas hechas con el <b>corazón</b>",
+      "feature1" : "Artesanos Ditulum",
+      "feature2" : "Equipo Ditulum",
+      "feature3" : "Showroom"
+    },
+    "subBanner" : {
+      "text" : "Los <b>productos y proyectos de Ditulum</b> son realizados por un <b>equipo de artesanas y artesanos mexicanos </b>que ponen gran esfuerzo y dedicación en su trabajo todos los días.",
+      "title" : "Cada pieza es tan única como la persona que la fabricó."
+    }
   }
 }
