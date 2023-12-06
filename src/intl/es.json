@@ -1,22 +1,27 @@
 {
-  "banner": "Encuentra el <b>equilibrio entre la naturaleza y los espacios</b> que habitas",
-  "services": {
-    "title": "Servicios",
-    "description": "Creamos experiencias que te permiten desarrollarte de manera funcional y creativa, sin dejar de lado un ambiente natural y saludable.",
-    "titleEspacios": "Diseño de espacios",
-    "titleTapiceria": "Tapicería y costura",
-    "titleJardineria": "Vivero, macetas y jardinería",
-    "titleFloral": "Diseño floral para eventos",
-    "titleImportados": "Productos importados"
+  "home": {
+    "banner": "Encuentra el <b>equilibrio entre la naturaleza y los espacios</b> que habitas",
+    "services": {
+      "title": "Servicios",
+      "description": "Creamos experiencias que te permiten desarrollarte de manera funcional y creativa, sin dejar de lado un ambiente natural y saludable.",
+      "titleEspacios": "Diseño de espacios",
+      "titleTapiceria": "Tapicería y costura",
+      "titleJardineria": "Vivero, macetas y jardinería",
+      "titleFloral": "Diseño floral para eventos",
+      "titleImportados": "Productos importados"
+    },
+    "feature": {
+      "title": "Nos comprometemos con <b>elevar tu estilo de vida</b>",
+      "cardTitleOne": "Productos hechos a mano",
+      "cardTitleTwo": "Materiales y elementos naturales",
+      "cardTitleThree": "Inspirados en la esencia de Tulum"
+    },
+    "instagram": {
+      "title": "Descubre más sobre la <b>magia de Ditulum</b>",
+      "link": "Ir a Instagram"
+    }
   },
-  "feature": {
-    "title": "Nos comprometemos con <b>elevar tu estilo de vida</b>",
-    "cardTitleOne": "Productos hechos a mano",
-    "cardTitleTwo": "Materiales y elementos naturales",
-    "cardTitleThree": "Inspirados en la esencia de Tulum"
-  },
-  "instagram": {
-    "title": "Descubre más sobre la <b>magia de Ditulum</b>",
-    "link": "Ir a Instagram"
+  "services" : {
+    
   }
 }

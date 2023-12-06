@@ -14,41 +14,41 @@ const HomeServiciosSection = () => {
   return (
     <section className="HomeServiciosSection ed-grid">
       <h2 className="HomeServiciosSection__title">
-        {intl.formatMessage({ id: "services.title" })}
+        {intl.formatMessage({ id: "home.services.title" })}
       </h2>
       <p className="HomeServiciosSection__text">
-        {intl.formatMessage({ id: "services.description" })}
+        {intl.formatMessage({ id: "home.services.description" })}
       </p>
 
       <div className="HomeServiciosSection__servicios">
         <CardServiHome
           index={0}
           imagen={servidiseño}
-          title={intl.formatMessage({ id: "services.titleEspacios" })}
+          title={intl.formatMessage({ id: "home.services.titleEspacios" })}
           url={"/servicios"}
         />
         <CardServiHome
           index={1}
           imagen={servitapiceria}
-          title={intl.formatMessage({ id: "services.titleTapiceria" })}
+          title={intl.formatMessage({ id: "home.services.titleTapiceria" })}
           url={"/servicios"}
         />
         <CardServiHome
           index={2}
           imagen={servijardineria}
-          title={intl.formatMessage({ id: "services.titleJardineria" })}
+          title={intl.formatMessage({ id: "home.services.titleJardineria" })}
           url={"/servicios"}
         />
         <CardServiHome
           index={3}
           imagen={serviflores}
-          title={intl.formatMessage({ id: "services.titleFloral" })}
+          title={intl.formatMessage({ id: "home.services.titleFloral" })}
           url={"/servicios"}
         />
         <CardServiHome
           index={4}
           imagen={serviProx}
-          title={intl.formatMessage({ id: "services.titleImportados" })}
+          title={intl.formatMessage({ id: "home.services.titleImportados" })}
           url={"#"}
         />
       </div>

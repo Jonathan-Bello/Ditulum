@@ -1,22 +1,24 @@
 {
-  "banner": "Find the <b>balance between nature and the spaces</b> you live in",
-  "services": {
-    "title": "Services",
-    "description": "We create experiences that allow you to develop in a functional and creative way, without leaving aside a natural and healthy environment.",
-    "titleEspacios": "Spaces design",
-    "titleTapiceria": "Upholstery and sewing",
-    "titleJardineria": "Nursery, pots, and gardening",
-    "titleFloral": "Floral design for events",
-    "titleImportados": "Imported products"
-  },
-  "feature": {
-    "title": "We're committed to <b>elevating your lifestyle</b>",
-    "cardTitleOne": "Handmade products",
-    "cardTitleTwo": "Natural materials and elements",
-    "cardTitleThree": "Inspired by the essence of Tulum"
-  },
-  "instagram": {
-    "title": "Discover more about the <b>magic of Ditulum</b>",
-    "link": "Go to Instagram"
+  "home": {
+    "banner": "Find the <b>balance between nature and the spaces</b> you live in",
+    "services": {
+      "title": "Services",
+      "description": "We create experiences that allow you to develop in a functional and creative way, without leaving aside a natural and healthy environment.",
+      "titleEspacios": "Spaces design",
+      "titleTapiceria": "Upholstery and sewing",
+      "titleJardineria": "Nursery, pots, and gardening",
+      "titleFloral": "Floral design for events",
+      "titleImportados": "Imported products"
+    },
+    "feature": {
+      "title": "We're committed to <b>elevating your lifestyle</b>",
+      "cardTitleOne": "Handmade products",
+      "cardTitleTwo": "Natural materials and elements",
+      "cardTitleThree": "Inspired by the essence of Tulum"
+    },
+    "instagram": {
+      "title": "Discover more about the <b>magic of Ditulum</b>",
+      "link": "Go to Instagram"
+    }
   }
 }

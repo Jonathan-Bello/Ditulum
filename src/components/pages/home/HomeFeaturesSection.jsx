@@ -13,22 +13,22 @@ const HomeFeaturesSection = () => {
       <h2
         className="HomeFeaturesSection__title"
         dangerouslySetInnerHTML={{
-          __html: intl.formatMessage({ id: "feature.title" }),
+          __html: intl.formatMessage({ id: "home.feature.title" }),
         }}
       />
 
       <div className="HomeFeaturesSection__featureList ">
         <CardMancha
           imgSrc={featureMano}
-          title={intl.formatMessage({ id: "feature.cardTitleOne" })}
+          title={intl.formatMessage({ id: "home.feature.cardTitleOne" })}
         />
         <CardMancha
           imgSrc={featureMaterial}
-          title={intl.formatMessage({ id: "feature.cardTitleTwo" })}
+          title={intl.formatMessage({ id: "home.feature.cardTitleTwo" })}
         />
         <CardMancha
           imgSrc={featureTulum}
-          title={intl.formatMessage({ id: "feature.cardTitleThree" })}
+          title={intl.formatMessage({ id: "home.feature.cardTitleThree" })}
         />
       </div>
     </div>

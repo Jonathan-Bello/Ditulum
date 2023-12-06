@@ -11,7 +11,7 @@ const HomeContent = () => {
 
   return (
     <>
-      <Banner image={BannerImg} text={intl.formatMessage({ id: "banner" })} />
+      <Banner image={BannerImg} text={intl.formatMessage({ id: "home.banner" })} />
       <HomeServiciosSection />
       <HomeFeaturesSection />
       <HomeInstagramSection />

@@ -15,7 +15,7 @@ const HomeInstagramSection = () => {
       <h2
         className="HomeInstagramSection__title"
         dangerouslySetInnerHTML={{
-          __html: intl.formatMessage({ id: "instagram.title" }),
+          __html: intl.formatMessage({ id: "home.instagram.title" }),
         }}
       />
 
@@ -33,7 +33,7 @@ const HomeInstagramSection = () => {
         href="https://www.instagram.com/ditulum"
         target="_blank"
       >
-        {intl.formatMessage({ id: "instagram.link" })}
+        {intl.formatMessage({ id: "home.instagram.link" })}
       </a>
     </section>
   )
