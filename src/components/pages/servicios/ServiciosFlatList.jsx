@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import CardServiciosFlatList from "../../cards/CardServiciosFlatList/CardServiciosFlatList"
 
 import chipEspacios from "../../../assets/img/servicios/chipEspacios.jpg"
@@ -10,39 +11,41 @@ const ServiciosFlatList = ({
   selectedServiceIndex,
   setSetselectedServiceIndex,
 }) => {
+  const intl = useIntl()
+
   return (
     <div className="ServiciosFlatList ed-grid s-mb-4">
       <CardServiciosFlatList
         imgSrc={chipEspacios}
-        title={"Diseño de espacios"}
+        title={intl.formatMessage({ id: "services.espacios.title" })}
         active={selectedServiceIndex == 0 ? true : false}
         index={0}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
         imgSrc={chipTapiceria}
-        title={"Tapicería y costura"}
+        title={intl.formatMessage({ id: "services.tapiceria.title" })}
         active={selectedServiceIndex == 1 ? true : false}
         index={1}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
         imgSrc={chipJardinaria}
-        title={"Vivero, macetas y jardinería"}
+        title={intl.formatMessage({ id: "services.jardineria.title" })}
         active={selectedServiceIndex == 2 ? true : false}
         index={2}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
         imgSrc={chipFloral}
-        title={"Diseño floral para eventos"}
+        title={intl.formatMessage({ id: "services.floral.title" })}
         active={selectedServiceIndex == 3 ? true : false}
         index={3}
         setSetselectedServiceIndex={setSetselectedServiceIndex}
       />
       <CardServiciosFlatList
         imgSrc={""}
-        title={"Productos importados"}
+        title={intl.formatMessage({ id: "services.importados.title" })}
         index={4}
       />
     </div>

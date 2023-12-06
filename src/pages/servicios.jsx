@@ -4,7 +4,7 @@ import ServiciosContent from "../components/pages/servicios/ServiciosContent"
 
 const ServiciosPage = ({ location }) => {
   const { state = {} } = location
-  const { selectedServices } = state
+  const { selectedServices } = state || {};
 
   return (
     <Layout>

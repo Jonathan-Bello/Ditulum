@@ -1,3 +1,4 @@
+import React from "react"
 import bannerEspacios from "../../../assets/img/servicios/bannerEspacios.jpg"
 import bannerTapiceria from "../../../assets/img/servicios/bannerTapiceria.jpg"
 import bannerJardineria from "../../../assets/img/servicios/bannerJardineria.jpg"
@@ -95,203 +96,209 @@ import icon21 from "../../../assets/svg/servicios/Icon21.svg"
 import icon22 from "../../../assets/svg/servicios/Icon22.svg"
 import icon23 from "../../../assets/svg/servicios/Icon23.svg"
 import icon24 from "../../../assets/svg/servicios/Icon24.svg"
+import { useIntl } from "gatsby-plugin-intl"
 
-const serviciosData = [
-  {
-    title: "Diseño de espacios",
-    description:
-      "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
-    imgSrc: bannerEspacios,
-    caracteristicas: [
-      {
-        imgIcon: icon1,
-        title: "Diseño de interiores",
-      },
-      {
-        imgIcon: icon2,
-        title: "Herrería y carpintería",
-      },
-      {
-        imgIcon: icon3,
-        title: "Asesoría profesional",
-      },
-      {
-        imgIcon: icon4,
-        title: "Diseño de paisajes",
-      },
-    ],
-    imgsGallery: [
-      espacios1,
-      espacios2,
-      espacios3,
-      espacios4,
-      espacios5,
-      espacios6,
-      espacios7,
-      espacios8,
-      espacios9,
-      espacios10,
-      espacios11,
-    ],
-  },
-  {
-    title: "Tapicería y costura",
-    description:
-      "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
-    imgSrc: bannerTapiceria,
-    caracteristicas: [
-      {
-        imgIcon: icon5,
-        title: "Cortinas",
-      },
-      {
-        imgIcon: icon6,
-        title: "Puffs",
-      },
-      {
-        imgIcon: icon7,
-        title: "Trabajos de macramé",
-      },
-      {
-        imgIcon: icon8,
-        title: "Camastros",
-      },
-      {
-        imgIcon: icon9,
-        title: "Colchonetas",
-      },
-      {
-        imgIcon: icon10,
-        title: "Toldos",
-      },
-    ],
-    imgsGallery: [
-      tapi1,
-      tapi2,
-      tapi3,
-      tapi4,
-      tapi5,
-      tapi6,
-      tapi7,
-      tapi8,
-      tapi9,
-      tapi10,
-      tapi11,
-      tapi12,
-      tapi13,
-      tapi14,
-      tapi15,
-      tapi16,
-    ],
-  },
-  {
-    title: "Vivero, macetas y jardinería",
-    description:
-      "Diseñamos ambientes ideales para que puedas trabajar o descansar, además de elevar tu calidad de vida.",
-    imgSrc: bannerJardineria,
-    caracteristicas: [
-      {
-        imgIcon: icon11,
-        title: "Árboles",
-      },
-      {
-        imgIcon: icon12,
-        title: "Palmas",
-      },
-      {
-        imgIcon: icon13,
-        title: "Semillas",
-      },
-      {
-        imgIcon: icon14,
-        title: "Piedra decorativa",
-      },
-      {
-        imgIcon: icon15,
-        title: "Macetas de barro",
-      },
-      {
-        imgIcon: icon16,
-        title: "Frutales",
-      },
-      {
-        imgIcon: icon17,
-        title: "Ornamentales",
-      },
-      {
-        imgIcon: icon18,
-        title: "Sustratos y abonos",
-      },
-      {
-        imgIcon: icon19,
-        title: "Maceta de cemento",
-      },
-      {
-        imgIcon: icon20,
-        title: "Macetas de tronco",
-      },
-    ],
-    imgsGallery: [
-      maseta1,
-      maseta2,
-      maseta3,
-      maseta4,
-      maseta5,
-      maseta6,
-      maseta7,
-      maseta8,
-      maseta9,
-      maseta10,
-      maseta11,
-      maseta12,
-      maseta13,
-      maseta14,
-      maseta15,
-      maseta16,
-      maseta17,
-      maseta18,
-      maseta19,
-      maseta20,
-      maseta21,
-    ],
-  },
-  {
-    title: "Diseño floral para eventos",
-    description:
-      "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
-    imgSrc: bannerFloral,
-    caracteristicas: [
-      {
-        imgIcon: icon21,
-        title: "Ramos de novia",
-      },
-      {
-        imgIcon: icon22,
-        title: "Centros de mesa",
-      },
-      {
-        imgIcon: icon23,
-        title: "Accesorios",
-      },
-      {
-        imgIcon: icon24,
-        title: "Arcos florales",
-      },
-    ],
-    imgsGallery: [
-      jardi1,
-      jardi2,
-      jardi3,
-      jardi4,
-      jardi5,
-      jardi6,
-      jardi7,
-      jardi8,
-      jardi9,
-      jardi10,
-      jardi11,
-    ],
-  },
-]
+const generateServiciosData = formatMessage => {
+  return [
+    {
+      title: formatMessage({ id: "services.espacios.title" }),
+      description: formatMessage({ id: "services.espacios.description" }),
+      imgSrc: bannerEspacios,
+      caracteristicas: [
+        {
+          imgIcon: icon1,
+          title: formatMessage({ id: "services.espacios.details.detail1" }),
+        },
+        {
+          imgIcon: icon2,
+          title: formatMessage({ id: "services.espacios.details.detail2" }),
+        },
+        {
+          imgIcon: icon3,
+          title: formatMessage({ id: "services.espacios.details.detail3" }),
+        },
+        {
+          imgIcon: icon4,
+          title: formatMessage({ id: "services.espacios.details.detail4" }),
+        },
+      ],
+      imgsGallery: [
+        espacios1,
+        espacios2,
+        espacios3,
+        espacios4,
+        espacios5,
+        espacios6,
+        espacios7,
+        espacios8,
+        espacios9,
+        espacios10,
+        espacios11,
+      ],
+    },
+    {
+      title: formatMessage({ id: "services.tapiceria.title" }),
+      description: formatMessage({ id: "services.tapiceria.description" }),
+      imgSrc: bannerTapiceria,
+      caracteristicas: [
+        {
+          imgIcon: icon5,
+          title: formatMessage({ id: "services.tapiceria.details.detail1" }),
+        },
+        {
+          imgIcon: icon6,
+          title: formatMessage({ id: "services.tapiceria.details.detail2" }),
+        },
+        {
+          imgIcon: icon7,
+          title: formatMessage({ id: "services.tapiceria.details.detail3" }),
+        },
+        {
+          imgIcon: icon8,
+          title: formatMessage({ id: "services.tapiceria.details.detail4" }),
+        },
+        {
+          imgIcon: icon9,
+          title: formatMessage({ id: "services.tapiceria.details.detail5" }),
+        },
+        {
+          imgIcon: icon10,
+          title: formatMessage({ id: "services.tapiceria.details.detail6" }),
+        },
+      ],
+      imgsGallery: [
+        tapi1,
+        tapi2,
+        tapi3,
+        tapi4,
+        tapi5,
+        tapi6,
+        tapi7,
+        tapi8,
+        tapi9,
+        tapi10,
+        tapi11,
+        tapi12,
+        tapi13,
+        tapi14,
+        tapi15,
+        tapi16,
+      ],
+    },
+    {
+      title: formatMessage({ id: "services.jardineria.title" }),
+      description: formatMessage({ id: "services.jardineria.description" }),
+      imgSrc: bannerJardineria,
+      caracteristicas: [
+        {
+          imgIcon: icon11,
+          title: formatMessage({ id: "services.jardineria.details.detail1" }),
+        },
+        {
+          imgIcon: icon12,
+          title: formatMessage({ id: "services.jardineria.details.detail2" }),
+        },
+        {
+          imgIcon: icon13,
+          title: formatMessage({ id: "services.jardineria.details.detail3" }),
+        },
+        {
+          imgIcon: icon14,
+          title: formatMessage({ id: "services.jardineria.details.detail4" }),
+        },
+        {
+          imgIcon: icon15,
+          title: formatMessage({ id: "services.jardineria.details.detail5" }),
+        },
+        {
+          imgIcon: icon16,
+          title: formatMessage({ id: "services.jardineria.details.detail6" }),
+        },
+        {
+          imgIcon: icon17,
+          title: formatMessage({ id: "services.jardineria.details.detail7" }),
+        },
+        {
+          imgIcon: icon18,
+          title: formatMessage({ id: "services.jardineria.details.detail8" }),
+        },
+        {
+          imgIcon: icon19,
+          title: formatMessage({ id: "services.jardineria.details.detail9" }),
+        },
+        {
+          imgIcon: icon20,
+          title: formatMessage({ id: "services.jardineria.details.detail10" }),
+        },
+      ],
+      imgsGallery: [
+        maseta1,
+        maseta2,
+        maseta3,
+        maseta4,
+        maseta5,
+        maseta6,
+        maseta7,
+        maseta8,
+        maseta9,
+        maseta10,
+        maseta11,
+        maseta12,
+        maseta13,
+        maseta14,
+        maseta15,
+        maseta16,
+        maseta17,
+        maseta18,
+        maseta19,
+        maseta20,
+        maseta21,
+      ],
+    },
+    {
+      title: formatMessage({ id: "services.floral.title" }),
+      description: formatMessage({ id: "services.floral.description" }),
+      imgSrc: bannerFloral,
+      caracteristicas: [
+        {
+          imgIcon: icon21,
+          title: formatMessage({ id: "services.floral.details.detail1" }),
+        },
+        {
+          imgIcon: icon22,
+          title: formatMessage({ id: "services.floral.details.detail2" }),
+        },
+        {
+          imgIcon: icon23,
+          title: formatMessage({ id: "services.floral.details.detail3" }),
+        },
+        {
+          imgIcon: icon24,
+          title: formatMessage({ id: "services.floral.details.detail4" }),
+        },
+      ],
+      imgsGallery: [
+        jardi1,
+        jardi2,
+        jardi3,
+        jardi4,
+        jardi5,
+        jardi6,
+        jardi7,
+        jardi8,
+        jardi9,
+        jardi10,
+        jardi11,
+      ],
+    },
+  ]
+}
 
-export default serviciosData
+const ServiciosContent = () => {
+  const intl = useIntl()
+  const serviciosData = generateServiciosData(intl.formatMessage)
+
+  return serviciosData
+}
+
+export default ServiciosContent

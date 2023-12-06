@@ -22,6 +22,58 @@
     }
   },
   "services" : {
-    
+    "banner" : "Convertimos cualquier espacio en el recinto perfecto que <b>conecte con el mundo natural</b>",
+    "espacios" : {
+      "title": "Diseño de espacios",
+      "description" : "Creamos experiencias únicas que se integran perfectamente al entorno y a la arquitectura.",
+      "details" : {
+        "detail1" : "Diseño de interiores",
+        "detail2" : "Herrería y carpintería",
+        "detail3" : "Asesoría profesional",
+        "detail4" : "Diseño de paisajes"
+      }
+    },
+    "tapiceria" : {
+      "title": "Tapicería y costura",
+      "description" : "Confeccionamos productos funcionales, estéticos y duraderos con materiales premium.",
+      "details" : {
+        "detail1" : "Cortinas",
+        "detail2" : "Puffs",
+        "detail3" : "Trabajos de macramé",
+        "detail4" : "Camastros",
+        "detail5" : "Colchonetas",
+        "detail6" : "Toldos"
+      }
+    },
+    "jardineria" : {
+      "title": "Vivero, macetas y jardinería",
+      "description" : "Diseñamos ambientes ideales para que puedas trabajar o descansar, además de elevar tu calidad de vida.",
+      "details" : {
+        "detail1" : "Árboles",
+        "detail2" : "Palmas",
+        "detail3" : "Semillas",
+        "detail4" : "Piedra decorativa",
+        "detail5" : "Macetas de barro",
+        "detail6" : "Frutales",
+        "detail7" : "Ornamentales",
+        "detail8" : "Sustratos y abonos",
+        "detail9" : "Maceta de cemento",
+        "detail10" : "Macetas de tronco"
+      }
+    },
+    "floral": {
+      "title": "Diseño floral para eventos",
+      "description" : "Nos enfocamos en los detalles de cada uno de nuestros diseños para que hagan memorables tus fechas especiales.",
+      "details" : {
+        "detail1" : "Ramos de novia",
+        "detail2" : "Centros de mesa",
+        "detail3" : "Accesorios",
+        "detail4" : "Arcos florales"
+      }
+    },
+    "importados": {
+      "title": "Productos importados"
+    },
+    "carouselTitle" : "<b>Creamos historias contigo</b> en los espacios que habitas"
   }
 }

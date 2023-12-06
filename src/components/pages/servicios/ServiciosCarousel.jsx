@@ -1,11 +1,17 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import CarouselGallery from "../../carousels/CarouselGallery"
 
 const ServiciosCarousel = ({ imgsGallery }) => {
+  const intl = useIntl()
+
   return (
     <section className="ServiciosCarousel ed-grid">
-      <h2 className="ServiciosCarousel__title">
-        <b>Creamos historias contigo</b> en los espacios que habitas
+      <h2 className="ServiciosCarousel__title"
+        dangerouslySetInnerHTML={{
+          __html: intl.formatMessage({ id: "services.carouselTitle" })
+        }}
+      >
       </h2>
 
       <CarouselGallery>
@@ -13,7 +19,6 @@ const ServiciosCarousel = ({ imgsGallery }) => {
           <img
             key={index}
             src={img}
-            // alt={img.name}
             className="ServiciosCarousel__img"
           />
         ))}

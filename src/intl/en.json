@@ -20,5 +20,60 @@
       "title": "Discover more about the <b>magic of Ditulum</b>",
       "link": "Go to Instagram"
     }
+  },
+  "services": {
+    "banner": "We turn any space into the perfect enclosure that <b>connects with the natural world</b>",
+    "espacios": {
+      "title": "Interior design",
+      "description": "We create unique experiences that integrate perfectly with the environment and architecture.",
+      "details": {
+        "detail1": "Interior design",
+        "detail2": "Blacksmiths and carpentry",
+        "detail3": "Professional consulting",
+        "detail4": "Landscape design"
+      }
+    },
+    "tapiceria": {
+      "title": "Upholstery and sewing",
+      "description": "We make functional, aesthetic, and durable products with premium materials.",
+      "details": {
+        "detail1": "Curtains",
+        "detail2": "Puffs",
+        "detail3": "Macramé",
+        "detail4": "Beach beds",
+        "detail5": "Mats",
+        "detail6": "Awnings"
+      }
+    },
+    "jardineria": {
+      "title": "Nursery, pots, and gardening",
+      "description": "We design ideal environments for you to work, rest, and improve your life quality.",
+      "details": {
+        "detail1": "Trees",
+        "detail2": "Palms",
+        "detail3": "Seeds",
+        "detail4": "Decorative stone",
+        "detail5": "Clay pots",
+        "detail6": "Fruit trees",
+        "detail7": "Ornamental plants",
+        "detail8": "Substrates an fertilizers",
+        "detail9": "Cement pots",
+        "detail10": "Log pots"
+      }
+    },
+    "floral": {
+      "title": "Floral design for events",
+      "description": "We focus on the details of each of our designs to make your special occasions memorable.",
+      "details": {
+        "detail1": "Bridal bouquets",
+        "detail2": "Centerpieces",
+        "detail3": "Accessories",
+        "detail4": "Floral arches"
+      }
+    },
+    "importados": {
+      "title": "Imported products"
+    },
+    "carouselTitle": "<b>We create stories</b> with you in the spaces you live in"
   }
 }
