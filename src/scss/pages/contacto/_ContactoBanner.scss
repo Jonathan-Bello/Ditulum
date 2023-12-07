@@ -47,8 +47,8 @@
       margin: 0;
       font-size: 1em;
       text-align: start;
-      padding: 2rem 0rem 1rem 25%;
-      max-width: 350px;
+      padding: 2rem 5% 1rem 20%;
+      max-width: 320px;
 
       @include from(m) {
         font-size: 1.2rem;

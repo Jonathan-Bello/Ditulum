@@ -97,5 +97,16 @@
       "text": "<b>Ditulum’s products and projects</b> are made by Mexican artisans that put much effort and dedication in their daily work.",
       "title": "Every piece is as unique as the person who made it."
     }
+  },
+  "contact": {
+    "banner": "<h2>Tell us your ideas</h2><p>Tell us what you have in mind and <b>transform your ideas in beautiful spaces.</b></p>",
+    "contactData": {
+      "addressTitle": "Address",
+      "address": "Av. Kukulkan Mz #10 Lote #2. Tulum, Q. Roo",
+      "daysTitle": "Days and Hours of Attention",
+      "days1": "Monday-Friday",
+      "days2": "Saturday",
+      "titleSocial": "Follow us on our social networks"
+    }
   }
 }

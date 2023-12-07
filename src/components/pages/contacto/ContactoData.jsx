@@ -1,4 +1,5 @@
 import React from "react"
+import { useIntl } from "gatsby-plugin-intl"
 import { GrLocation } from "@react-icons/all-files/gr/GrLocation"
 import { BsCalendar } from "@react-icons/all-files/bs/BsCalendar"
 import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail"
@@ -7,6 +8,8 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 import { RiFacebookFill } from "@react-icons/all-files/ri/RiFacebookFill"
 
 const ContactoData = () => {
+  const intl = useIntl()
+
   return (
     <section className="ContactoData ed-grid s-grid-1 lg-grid-2">
       <div className="ContactoData__data">
@@ -14,11 +17,11 @@ const ContactoData = () => {
           <div className="ContactoDataItem__titleContainer">
             <GrLocation className="ContactoDataItem__titleContainer__icon" />
             <h3 className="ContactoDataItem__titleContainer__title">
-              Dirección
+              {intl.formatMessage({ id: "contact.contactData.addressTitle" })}
             </h3>
           </div>
           <p className="ContactoDataItem__text">
-            Av. Kukulkan MZ 10-L2, Centro, 77760 Tulum, Q.R., México
+            {intl.formatMessage({ id: "contact.contactData.address" })}
           </p>
         </div>
 
@@ -26,12 +29,16 @@ const ContactoData = () => {
           <div className="ContactoDataItem__titleContainer">
             <BsCalendar className="ContactoDataItem__titleContainer__icon" />
             <h3 className="ContactoDataItem__titleContainer__title">
-              Días y Horarios de Atención
+              {intl.formatMessage({ id: "contact.contactData.daysTitle" })}
             </h3>
           </div>
-          <h4 className="ContactoDataItem__subtitle">Lunes a viernes</h4>
+          <h4 className="ContactoDataItem__subtitle">
+            {intl.formatMessage({ id: "contact.contactData.days1" })}
+          </h4>
           <p className="ContactoDataItem__text">9:00 a.m. a 6:00 p.m.</p>
-          <h4 className="ContactoDataItem__subtitle">Sábado</h4>
+          <h4 className="ContactoDataItem__subtitle">
+            {intl.formatMessage({ id: "contact.contactData.days2" })}
+          </h4>
           <p className="ContactoDataItem__text">9:00 a.m. a 5:00 p.m.</p>
         </div>
 
@@ -65,7 +72,7 @@ const ContactoData = () => {
         <div className="ContactoDataItem">
           <div className="ContactoDataItem__titleContainer">
             <h3 className="ContactoDataItem__titleContainer__title">
-              Encuentranos en nuestras redes sociales
+              {intl.formatMessage({ id: "contact.contactData.titleSocial" })}
             </h3>
           </div>
           <p className="ContactoDataItem__text">

@@ -84,18 +84,29 @@
     "content": {
       "text1": "Se dice que en cada espacio habitan historias únicas que se cuentan a través de los objetos que lo componen. Estos se convierten en experiencias que resuenan en cada rincón y nos hacen ser quienes somos.",
       "text2": "Se dice que en cada espacio habitan historias únicas que se cuentan a través de los objetos que lo componen. Estos se convierten en experiencias que resuenan en cada rincón y nos hacen ser quienes somos.",
-      "text3" : "En Ditulum, no solo creamos objetos con corazón, te ayudamos a diseñar ese lugar donde puedas sembrar tus historias y sentirte seguro. Un refugio que te conecta con la naturaleza y te permite mirar a tu interior.",
-      "slogan" : "De mi corazón al de ustedes,"
+      "text3": "En Ditulum, no solo creamos objetos con corazón, te ayudamos a diseñar ese lugar donde puedas sembrar tus historias y sentirte seguro. Un refugio que te conecta con la naturaleza y te permite mirar a tu interior.",
+      "slogan": "De mi corazón al de ustedes,"
     },
-    "features" : {
-      "title" : "Piezas hechas con el <b>corazón</b>",
-      "feature1" : "Artesanos Ditulum",
-      "feature2" : "Equipo Ditulum",
-      "feature3" : "Showroom"
+    "features": {
+      "title": "Piezas hechas con el <b>corazón</b>",
+      "feature1": "Artesanos Ditulum",
+      "feature2": "Equipo Ditulum",
+      "feature3": "Showroom"
     },
-    "subBanner" : {
-      "text" : "Los <b>productos y proyectos de Ditulum</b> son realizados por un <b>equipo de artesanas y artesanos mexicanos </b>que ponen gran esfuerzo y dedicación en su trabajo todos los días.",
-      "title" : "Cada pieza es tan única como la persona que la fabricó."
+    "subBanner": {
+      "text": "Los <b>productos y proyectos de Ditulum</b> son realizados por un <b>equipo de artesanas y artesanos mexicanos </b>que ponen gran esfuerzo y dedicación en su trabajo todos los días.",
+      "title": "Cada pieza es tan única como la persona que la fabricó."
+    }
+  },
+  "contact": {
+    "banner": "<h1>Comunícanos tus ideas</h1><p>Cuéntanos qué tienes en mente y <b>transforma tus ideas en espacios.</b></p>",
+    "contactData": {
+      "addressTitle": "Dirección",
+      "address": "Av. Kukulkan MZ 10-L2, Centro, 77760 Tulum, Q.R., México",
+      "daysTitle": "Días y Horarios de Atención",
+      "days1": "Lunes a viernes",
+      "days2": "Sábado",
+      "titleSocial": "Síguenos en nuestras redes sociales"
     }
   }
 }
