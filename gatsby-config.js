@@ -43,7 +43,7 @@ module.exports = {
       // ruta al recurso JSON del idioma
       path: `${__dirname}/src/intl`,
       // idiomas soportados
-      languages: [`en`, `es`],
+      languages: [`es`,`en`],
       // idioma predeterminado
       defaultLanguage: `es`,
       // opción para redirigir a `/es` cuando se conecta a `/`
