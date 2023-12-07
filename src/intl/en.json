@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "catalog": "Catalog",
+    "contact": "Contact"
+  },
   "home": {
     "banner": "Find the <b>balance between nature and the spaces</b> you live in",
     "services": {
@@ -108,5 +115,13 @@
       "days2": "Saturday",
       "titleSocial": "Follow us on our social networks"
     }
+  },
+  "catalog": {
+    "loremText": "To see our catalogue, contact us by"
+  },
+  "footer": {
+    "notice": "Notice of Privacy",
+    "reserved": "© 2023 Ditulum - All rights reserved",
+    "by": "Crafted by YGU Communication"
   }
 }

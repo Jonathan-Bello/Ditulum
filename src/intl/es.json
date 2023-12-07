@@ -1,4 +1,11 @@
 {
+  "header": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "aboutUs": "Nosotros",
+    "catalog": "Catálogo",
+    "contact": "Contacto"
+  },
   "home": {
     "banner": "Encuentra el <b>equilibrio entre la naturaleza y los espacios</b> que habitas",
     "services": {
@@ -108,5 +115,13 @@
       "days2": "Sábado",
       "titleSocial": "Síguenos en nuestras redes sociales"
     }
+  },
+  "catalog": {
+    "loremText": "Para conocer nuestro catálogo, contacta con nosotros por"
+  },
+  "footer": {
+    "notice": "Aviso de privacidad",
+    "reserved": "© 2023 Ditulum - Todos los derechos reservados",
+    "by": "Elaborado por YGU Comunicaxion"
   }
 }

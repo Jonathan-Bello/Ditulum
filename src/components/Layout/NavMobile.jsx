@@ -1,8 +1,10 @@
 import React from "react"
 import { GrClose } from "@react-icons/all-files/gr/GrClose"
-import { Link } from "gatsby-plugin-intl"
+import { Link, useIntl } from "gatsby-plugin-intl"
 
 const NavMobile = ({ showMenu, setShowMenu }) => {
+  const intl = useIntl()
+
   const handlerSubMenu = () => {
     if (
       window.location.pathname === "/en/servicios/" ||
@@ -22,14 +24,16 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
       <ul className="NavMobile__list">
         <li className="NavMobile__list__item">
           <Link to="/" className="NavMobile__list__item__link">
-            Inicio
+            {intl.formatMessage({ id: "header.home" })}
           </Link>
         </li>
         <li className="NavMobile__list__item">
-          <Link to="/servicios" className="NavMobile__list__item__link"
+          <Link
+            to="/servicios"
+            className="NavMobile__list__item__link"
             onClick={() => handlerSubMenu()}
           >
-            Servicios
+            {intl.formatMessage({ id: "header.services" })}
           </Link>
         </li>
 
@@ -40,7 +44,7 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             state={{ selectedServices: 0 }}
             onClick={() => handlerSubMenu()}
           >
-            Diseño de espacios
+            {intl.formatMessage({ id: "home.services.titleEspacios" })}
           </Link>
           <Link
             className="NavMobile__list__item__link"
@@ -48,7 +52,7 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             state={{ selectedServices: 1 }}
             onClick={() => handlerSubMenu()}
           >
-            Tapicería y costura
+            {intl.formatMessage({ id: "home.services.titleTapiceria" })}
           </Link>
           <Link
             className="NavMobile__list__item__link"
@@ -56,7 +60,7 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             state={{ selectedServices: 2 }}
             onClick={() => handlerSubMenu()}
           >
-            Vivero, macetas y jardinería
+            {intl.formatMessage({ id: "home.services.titleJardineria" })}
           </Link>
           <Link
             className="NavMobile__list__item__link"
@@ -64,7 +68,7 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             state={{ selectedServices: 3 }}
             onClick={() => handlerSubMenu()}
           >
-            Diseño floral para eventos
+            {intl.formatMessage({ id: "home.services.titleFloral" })}
           </Link>
           <Link
             className="NavMobile__list__item__link disable"
@@ -72,23 +76,23 @@ const NavMobile = ({ showMenu, setShowMenu }) => {
             state={{ selectedServices: 3 }}
             disabled
           >
-            Productos importados
+            {intl.formatMessage({ id: "home.services.titleImportados" })}
           </Link>
         </div>
 
         <li className="NavMobile__list__item">
           <Link to="/nosotros" className="NavMobile__list__item__link">
-            Nosotros
+            {intl.formatMessage({ id: "header.aboutUs" })}
           </Link>
         </li>
         <li className="NavMobile__list__item">
           <Link to="/catalogo" className="NavMobile__list__item__link">
-            Catálogo
+            {intl.formatMessage({ id: "header.catalog" })}
           </Link>
         </li>
         <li className="NavMobile__list__item">
           <Link to="/contacto" className="NavMobile__list__item__link">
-            Contacto
+            {intl.formatMessage({ id: "header.contact" })}
           </Link>
         </li>
       </ul>

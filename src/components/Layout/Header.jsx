@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby-plugin-intl"
+import { Link, useIntl } from "gatsby-plugin-intl"
 import { AiOutlineMenu } from "@react-icons/all-files/ai/AiOutlineMenu"
 
 import NavMobile from "./NavMobile"
@@ -11,6 +11,8 @@ import DeskLogo from "../../assets/svg/DeskLogo.svg"
 import LangSelector from "./LangSelector"
 
 const Header = ({ siteTitle }) => {
+  const intl = useIntl()
+
   const { width, height } = useScreenSize()
   const [showMenu, setShowMenu] = React.useState(false)
   const [showSubList, setShowSubList] = React.useState(false)
@@ -20,7 +22,10 @@ const Header = ({ siteTitle }) => {
   }
 
   const handlerSubListLink = () => {
-    if (window.location.pathname === "/en/servicios/" || window.location.pathname === "/es/servicios/") {
+    if (
+      window.location.pathname === "/en/servicios/" ||
+      window.location.pathname === "/es/servicios/"
+    ) {
       window.location.reload()
     }
   }
@@ -30,7 +35,7 @@ const Header = ({ siteTitle }) => {
       {width >= 1024 && (
         <div className="lg-40">
           <div className="Header__linkList">
-            <Link to="/">Home</Link>
+            <Link to="/">{intl.formatMessage({ id: "header.home" })}</Link>
             <div className="Header__linkList--servicios">
               <Link
                 onClick={e => {
@@ -38,7 +43,7 @@ const Header = ({ siteTitle }) => {
                   handlerSubList()
                 }}
               >
-                Servicios
+                {intl.formatMessage({ id: "header.services" })}
               </Link>
               <div
                 className={`Header__linkList--servicios__subList ${
@@ -50,28 +55,28 @@ const Header = ({ siteTitle }) => {
                   state={{ selectedServices: 0 }}
                   onClick={handlerSubListLink}
                 >
-                  Diseño de espacios
+                  {intl.formatMessage({ id: "home.services.titleEspacios" })}
                 </Link>
                 <Link
                   to="/servicios"
                   state={{ selectedServices: 1 }}
                   onClick={handlerSubListLink}
                 >
-                  Tapicería y costura
+                  {intl.formatMessage({ id: "home.services.titleTapiceria" })}
                 </Link>
                 <Link
                   to="/servicios"
                   state={{ selectedServices: 2 }}
                   onClick={handlerSubListLink}
                 >
-                  Vivero, macetas y jardinería
+                  {intl.formatMessage({ id: "home.services.titleJardineria" })}
                 </Link>
                 <Link
                   to="/servicios"
                   state={{ selectedServices: 3 }}
                   onClick={handlerSubListLink}
                 >
-                  Diseño floral para eventos
+                  {intl.formatMessage({ id: "home.services.titleFloral" })}
                 </Link>
                 <Link
                   onClick={e => e.preventDefault()}
@@ -79,11 +84,13 @@ const Header = ({ siteTitle }) => {
                     color: "gray",
                   }}
                 >
-                  Productos importados
+                  {intl.formatMessage({ id: "home.services.titleImportados" })}
                 </Link>
               </div>
             </div>
-            <Link to="/nosotros">Nosotros</Link>
+            <Link to="/nosotros">
+              {intl.formatMessage({ id: "header.aboutUs" })}
+            </Link>
           </div>
         </div>
       )}
@@ -98,8 +105,12 @@ const Header = ({ siteTitle }) => {
 
       {width >= 1024 && (
         <div className="Header__linkList lg-20">
-          <Link to="/catalogo">Catálogo</Link>
-          <Link to="/contacto">Contacto</Link>
+          <Link to="/catalogo">
+            {intl.formatMessage({ id: "header.catalog" })}
+          </Link>
+          <Link to="/contacto">
+            {intl.formatMessage({ id: "header.contact" })}
+          </Link>
         </div>
       )}
 
