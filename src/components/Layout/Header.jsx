@@ -95,13 +95,13 @@ const Header = ({ siteTitle }) => {
         </div>
       )}
 
-      <div className="Header__logo lg-20">
+      <Link to="/" className="Header__logo lg-20">
         <img
           className="Header__logo__img"
           src={width >= 1024 ? DeskLogo : MobileLogo}
           alt="icon"
         />
-      </div>
+      </Link>
 
       {width >= 1024 && (
         <div className="Header__linkList lg-20">
