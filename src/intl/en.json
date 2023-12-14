@@ -108,12 +108,17 @@
   "contact": {
     "banner": "<h1>Tell us your ideas</h1><p>Tell us what you have in mind and <b>transform your ideas in beautiful spaces.</b></p>",
     "contactData": {
+      "branchTitle": "Kukulkan branch",
       "addressTitle": "Address",
       "address": "Av. Kukulkan Mz #10 Lote #2. Tulum, Q. Roo",
       "daysTitle": "Days and Hours of Attention",
       "days1": "Monday-Friday",
       "days2": "Saturday",
       "titleSocial": "Follow us on our social media"
+    },
+    "contactData2": {
+      "branchTitle": "Satellite branch",
+      "address": "Av. Satélite Mz 48 Lote 15 Local 3 Col. Mayapax"
     }
   },
   "catalog": {

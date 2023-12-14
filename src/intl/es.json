@@ -108,12 +108,17 @@
   "contact": {
     "banner": "<h1>Comunícanos tus ideas</h1><p>Cuéntanos qué tienes en mente y <b>transforma tus ideas en espacios.</b></p>",
     "contactData": {
+      "branchTitle": "Sucursal Kukulkan",
       "addressTitle": "Dirección",
       "address": "Av. Kukulkan MZ 10-L2, Centro, 77760 Tulum, Q.R., México",
       "daysTitle": "Días y Horarios de Atención",
       "days1": "Lunes a viernes",
       "days2": "Sábado",
       "titleSocial": "Síguenos en nuestras redes sociales"
+    },
+    "contactData2": {
+      "branchTitle": "Sucursal Satellite",
+      "address": "Av. Satélite Mz 48 Lote 15 Local 3 Col. Mayapax"
     }
   },
   "catalog": {
