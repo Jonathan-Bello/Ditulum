@@ -18,6 +18,9 @@ const Footer = () => {
               {intl.formatMessage({ id: "contact.contactData.addressTitle" })}
             </h5>
             <p className="Footer__contactData__text">
+              {intl.formatMessage({ id: "contact.contactData2.address" })}
+            </p>
+            <p className="Footer__contactData__text">
               {intl.formatMessage({ id: "contact.contactData.address" })}
             </p>
 
